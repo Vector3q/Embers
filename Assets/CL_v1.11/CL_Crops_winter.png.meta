@@ -1,9 +1,9 @@
 fileFormatVersion: 2
 guid: bd2badd8082f44345a0bc6447662f188
 TextureImporter:
-  fileIDToRecycleName: {}
+  internalIDToNameTable: []
   externalObjects: {}
-  serializedVersion: 9
+  serializedVersion: 11
   mipmaps:
     mipMapMode: 0
     enableMipMap: 0
@@ -23,6 +23,8 @@ TextureImporter:
   isReadable: 0
   streamingMipmaps: 0
   streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMasterTextureLimit: 0
   grayScaleToAlpha: 0
   generateCubemap: 6
   cubemapConvolution: 0
@@ -32,15 +34,15 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -54,11 +56,15 @@ TextureImporter:
   textureType: 8
   textureShape: 1
   singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
   maxTextureSizeSet: 0
   compressionQualitySet: 0
   textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 1
   platformSettings:
-  - serializedVersion: 2
+  - serializedVersion: 3
     buildTarget: DefaultTexturePlatform
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -69,7 +75,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: Standalone
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -80,7 +87,8 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
-  - serializedVersion: 2
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
     buildTarget: WebGL
     maxTextureSize: 2048
     resizeAlgorithm: 0
@@ -91,17 +99,2333 @@ TextureImporter:
     allowsAlphaSplitting: 0
     overridden: 0
     androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Server
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
+  - serializedVersion: 3
+    buildTarget: Windows Store Apps
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 1
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: CL_Crops_winter_0
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 272
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09aad0837ca71554498f394460f813f3
+      internalID: 805816885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_1
+      rect:
+        serializedVersion: 2
+        x: 18
+        y: 276
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76881db03f8ba084ab0bf37e4fa0b4ea
+      internalID: 1507495710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_2
+      rect:
+        serializedVersion: 2
+        x: 90
+        y: 225
+        width: 29
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 263ed19da93046f47a65bf8eaa443dbf
+      internalID: -447166031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_3
+      rect:
+        serializedVersion: 2
+        x: 135
+        y: 224
+        width: 35
+        height: 64
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9afcbb01a1f000d4b9f5db4eb505118a
+      internalID: 341512355
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 272
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de43a2a276975244a9c814ec0dc143a2
+      internalID: 2047815884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_5
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 276
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7bec64af24a64546b7bcd3d5763ec7d
+      internalID: -2097158008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_6
+      rect:
+        serializedVersion: 2
+        x: 339
+        y: 208
+        width: 42
+        height: 80
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bc4837bc2ab03d49ac7bacb52475a8d
+      internalID: -254063031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_7
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 129
+        width: 42
+        height: 153
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9a99baae81773db43a5402ac75ade2e2
+      internalID: -2024100523
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_8
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 257
+        width: 10
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c62641fa67de9a84c98038185426c2c2
+      internalID: -403875901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_9
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 226
+        width: 20
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 310e09304c9b7934089ba84bdb1329a2
+      internalID: -531750378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_10
+      rect:
+        serializedVersion: 2
+        x: 296
+        y: 209
+        width: 34
+        height: 58
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee813640f7a57f4da282ef86eda71b7
+      internalID: -290291703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_11
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 256
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c742e56b12c1dce40945192b3c5c98e6
+      internalID: -1149719674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_12
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 262
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23e545c05ec514b4d867fb87849bb73c
+      internalID: 1294707614
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_13
+      rect:
+        serializedVersion: 2
+        x: 502
+        y: 209
+        width: 36
+        height: 63
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6fbf77b45ed98443a60fd7ba1127e25
+      internalID: -1678603320
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_14
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 227
+        width: 12
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12bba3925f40f7a449b04d40ea934b77
+      internalID: 1022344146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_15
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 227
+        width: 15
+        height: 32
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3158ba98c4c67d44bb0e60bf80b4bdb
+      internalID: -1540455423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_16
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee3376efd9cd4744fb667e4aafda5c55
+      internalID: 895127178
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_17
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 212
+        width: 12
+        height: 18
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04c56d6a1359f6d4bb520fa911b4336c
+      internalID: 1377265887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_18
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 212
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9deb97fb895b67840beda65d1633f38b
+      internalID: 806447444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_19
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 210
+        width: 20
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b03f098f2972146b16489bea42d0f4
+      internalID: -473538149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_20
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 210
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f7782c19d4a7434e898fc0b1c322dc6
+      internalID: 400457254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_21
+      rect:
+        serializedVersion: 2
+        x: 419
+        y: 214
+        width: 10
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 265f61a76e97bb047ab2fee7faa6f67d
+      internalID: -1594373280
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_22
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 213
+        width: 16
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40a24dcd80951464a9b2f4b5ab921888
+      internalID: 839797796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_23
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 212
+        width: 22
+        height: 44
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 446cf4c0b69c95a4eb2106708c38c452
+      internalID: 319456129
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_24
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 210
+        width: 16
+        height: 21
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a32d8d8c52e719b44b7f404225afc5c3
+      internalID: -526152575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_25
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 208
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca58591a2b4bc7f43ae8c97fca326139
+      internalID: -1636938435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_26
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 211
+        width: 8
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b02eea32efa53954b8ba6c1c7cca5a76
+      internalID: 629347449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_27
+      rect:
+        serializedVersion: 2
+        x: 91
+        y: 161
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2a804aa303f2ad4ea61649f1ee9c692
+      internalID: -307626472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_28
+      rect:
+        serializedVersion: 2
+        x: 134
+        y: 80
+        width: 38
+        height: 139
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 60}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f0e512101e01ea4bb57f13583b2caf5
+      internalID: 1092477681
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_29
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 193
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 641d9128b0baf814f9f4508c15a24973
+      internalID: -1978148585
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_30
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 163
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd43e280d0271ee41b7dda8be9bac611
+      internalID: -1477032817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_31
+      rect:
+        serializedVersion: 2
+        x: 46
+        y: 162
+        width: 19
+        height: 42
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1989b88856188fc4eb614b3eb6333052
+      internalID: -1674642491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_32
+      rect:
+        serializedVersion: 2
+        x: 342
+        y: 128
+        width: 36
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2502748afc70baa408bfecee6225a620
+      internalID: -1400009845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_33
+      rect:
+        serializedVersion: 2
+        x: 507
+        y: 129
+        width: 26
+        height: 68
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89753a00aae14ab4bbf27235eb388c0c
+      internalID: 1200781859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_34
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 163
+        width: 12
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9571ae7bcb3ccb4a80c981cb039f613
+      internalID: -1671381112
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_35
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6ca202b0feaf2f47adcd995bdc8bfd3
+      internalID: -796299346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_36
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 176
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d854414ab5ad046469440c72234575c6
+      internalID: 1829093662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_37
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 180
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c1f9dd6e1a4def47a71e24dd76f4908
+      internalID: 2035337206
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_38
+      rect:
+        serializedVersion: 2
+        x: 299
+        y: 129
+        width: 27
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cc1e8d17be1d3243bb819ffab20b395
+      internalID: 168037885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_39
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 176
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb462dbdd8870f14da3c5eb55411b1d6
+      internalID: -974649526
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_40
+      rect:
+        serializedVersion: 2
+        x: 435
+        y: 181
+        width: 10
+        height: 9
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b0dba09ce6cb35419734d85f49c6c57
+      internalID: 668494762
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_41
+      rect:
+        serializedVersion: 2
+        x: 461
+        y: 130
+        width: 22
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b41373d975c0c934a8a67ede4ac57651
+      internalID: 1414972590
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_42
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 113
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e68c7947559234c84c2ef27f45ed73
+      internalID: 186191868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_43
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 133
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 424cd6e676d039142b29c71dd1c5c7e6
+      internalID: -1821947268
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_44
+      rect:
+        serializedVersion: 2
+        x: 43
+        y: 82
+        width: 27
+        height: 53
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cea873b35037cb743b145e982abd0fa6
+      internalID: 1183551548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_45
+      rect:
+        serializedVersion: 2
+        x: 88
+        y: 81
+        width: 34
+        height: 67
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c03bd1eca8d36ab4fb460c40dc6fa74a
+      internalID: 1829512544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_46
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 132
+        width: 12
+        height: 19
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8c0567535ff5344383b4240b4f71198
+      internalID: 1842183243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_47
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 132
+        width: 16
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8287ea0fdf9fec428ee96804749ec71
+      internalID: 1283308062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_48
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 130
+        width: 16
+        height: 43
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9ef5b88dd9ce094e82b8b02dbe11617
+      internalID: -96812064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_49
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 130
+        width: 16
+        height: 24
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 654dbc2e6990eeb4285037f4047e85ea
+      internalID: -2000111134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_50
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 133
+        width: 11
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8c49deeff23e4409a968552e531f04
+      internalID: 1071875845
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_51
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 132
+        width: 16
+        height: 34
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8859cc389ca227443881da6e0a7adcff
+      internalID: 41392758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_52
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 131
+        width: 16
+        height: 23
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d2f6144404be74449f141734b50d12c
+      internalID: 1656877040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_53
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 83
+        width: 12
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a29bfd35737030945b2dc85597441a95
+      internalID: 1088655021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_54
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 83
+        width: 14
+        height: 33
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b079cfdb6158e024ea12ee0bbcc2fe5a
+      internalID: 1349118756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_55
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 81
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 165d938bf7763b74b9dd699261509784
+      internalID: 1840789547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_56
+      rect:
+        serializedVersion: 2
+        x: 294
+        y: 33
+        width: 37
+        height: 70
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: af4cb6fc653308648b55089393030bfe
+      internalID: 385414149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_57
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 33
+        width: 48
+        height: 92
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6f60407fbc18974394f628c0fa2741f
+      internalID: -57615869
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_58
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 97
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3e1e8bf37acdeb046b15bd7594571930
+      internalID: -5838377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_59
+      rect:
+        serializedVersion: 2
+        x: 434
+        y: 96
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 077fb79fffcf0eb4092111bf9be9b3df
+      internalID: -2078836786
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_60
+      rect:
+        serializedVersion: 2
+        x: 451
+        y: 97
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc34f507404a71a409441822a2ed9697
+      internalID: -1661105169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_61
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 80
+        width: 32
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c1fa39d8187e1a45be3ff23c6c59e2e
+      internalID: -497384187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_62
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 97
+        width: 32
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673da6d3fc568bc4ba1d10a40f883b23
+      internalID: -2098694226
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_63
+      rect:
+        serializedVersion: 2
+        x: 530
+        y: 96
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97f214b9bda91cd4aba52166dd2fbfba
+      internalID: 1164930289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_64
+      rect:
+        serializedVersion: 2
+        x: 547
+        y: 97
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d4dd034477db3841bb295b42a97fbed
+      internalID: 214869244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_65
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 85
+        width: 32
+        height: 27
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aba2363e50f5ee4f80989df0c090ede
+      internalID: -188664446
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_66
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 80
+        width: 14
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e45c42812bcd38479f0261ec8099512
+      internalID: -842000866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_67
+      rect:
+        serializedVersion: 2
+        x: 227
+        y: 84
+        width: 10
+        height: 8
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15f9033ce0420c4a9956fbf0c364ef0
+      internalID: -1296469297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_68
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 83
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc145401621d024cb3f56ede97994c1
+      internalID: -163194071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_69
+      rect:
+        serializedVersion: 2
+        x: 417
+        y: 80
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb0b0ae220cedce4a9e0feb3828516bd
+      internalID: 59476303
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_70
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 81
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a919837fec005fc4099bb504bb8370bc
+      internalID: -338340489
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_71
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 83
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a0fe2b67b8eca94bba0098759c490c0
+      internalID: 298651840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_72
+      rect:
+        serializedVersion: 2
+        x: 513
+        y: 80
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2680c6f7943b23849b126198d9908758
+      internalID: -145695029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_73
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 81
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be59c171341c82c4e8f2b85339321e93
+      internalID: -842947431
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_74
+      rect:
+        serializedVersion: 2
+        x: 132
+        y: 1
+        width: 42
+        height: 77
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f52f0c24848d4b4e864338410a70067
+      internalID: 1772269924
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_75
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 34
+        width: 16
+        height: 41
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c671ab87fa78a646ac09f0af29cd775
+      internalID: -2078155177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_76
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d91b6fe9debbaf4d9d32a3c88156a64
+      internalID: -1695797511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_77
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 65
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a0f45402e20e944aec4f3c722e4a12
+      internalID: -1706877162
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_78
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 64
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee0e81a01cacd2c43bf8bd0f036f9d34
+      internalID: 1628758984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_79
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 65
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6383b17f73ae6841b4735248d09f388
+      internalID: 313130864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_80
+      rect:
+        serializedVersion: 2
+        x: 1
+        y: 33
+        width: 14
+        height: 31
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed9a7ed4e9b388f4ba14a6720ce39352
+      internalID: 1318270839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_81
+      rect:
+        serializedVersion: 2
+        x: 19
+        y: 52
+        width: 10
+        height: 10
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f542c36f4c169c8419858dcf3a49daf3
+      internalID: 1344836817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_82
+      rect:
+        serializedVersion: 2
+        x: 87
+        y: 1
+        width: 34
+        height: 61
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc58875a03d022b48a74f9e5530982f6
+      internalID: -1717422596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_83
+      rect:
+        serializedVersion: 2
+        x: 210
+        y: 36
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ccd93558b1bd7347a0e81b3d60f78b2
+      internalID: 422824499
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_84
+      rect:
+        serializedVersion: 2
+        x: 225
+        y: 36
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6068bc682acb4641b80c77f4643639d
+      internalID: -1934193201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_85
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 35
+        width: 16
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5cd6081db04e3b478e46f574a6d8e48
+      internalID: -1792869453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_86
+      rect:
+        serializedVersion: 2
+        x: 402
+        y: 49
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f69b269e81562b49941e8499cceb60e
+      internalID: 83400896
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_87
+      rect:
+        serializedVersion: 2
+        x: 418
+        y: 48
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d8dae561250fbf41b05bfb323b3d73d
+      internalID: -370625493
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_88
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 49
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fcd2aaebd64f434796514025dafbae2
+      internalID: 1028901476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_89
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 32
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ba85b3c5d54016409d536710c42dcc5
+      internalID: -1727368795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_90
+      rect:
+        serializedVersion: 2
+        x: 498
+        y: 49
+        width: 11
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4559968ad49a42948bbce04db9c86de3
+      internalID: -2068670478
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_91
+      rect:
+        serializedVersion: 2
+        x: 514
+        y: 48
+        width: 12
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 632ad4409b9d1c74ab1224f84c0f5a93
+      internalID: -1434695255
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_92
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 49
+        width: 32
+        height: 15
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b380e48e246a714092da65682e3b68e
+      internalID: 74031503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_93
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 32
+        width: 32
+        height: 26
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 094e6a9fb9af7bb4b9e7e49731066b91
+      internalID: -482541737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_94
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 2
+        width: 16
+        height: 40
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 345daf850928ae14dbacc04d5858526a
+      internalID: -245582277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_95
+      rect:
+        serializedVersion: 2
+        x: 401
+        y: 33
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97e60e59ab8700441a2d7a965d2a6d05
+      internalID: 1018109407
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_96
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 32
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5daab1d9b72d8949946d7afc613e43f
+      internalID: 1827438505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_97
+      rect:
+        serializedVersion: 2
+        x: 450
+        y: 35
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 514de6b437fbc7d42ad48f4d527fd522
+      internalID: 384190941
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_98
+      rect:
+        serializedVersion: 2
+        x: 497
+        y: 33
+        width: 13
+        height: 14
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 864e2055e5926004fa479978ca5878e1
+      internalID: 2029994449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_99
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 32
+        width: 31
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f4d52983550ae34788e54b83039dc66
+      internalID: -494196391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_100
+      rect:
+        serializedVersion: 2
+        x: 546
+        y: 35
+        width: 12
+        height: 13
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b110fb20e0d0c34fae4cee5acb4b9d0
+      internalID: 1087014942
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_101
+      rect:
+        serializedVersion: 2
+        x: 2
+        y: 4
+        width: 12
+        height: 20
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b521fd32c8b471140a7729859ff471dc
+      internalID: 481325330
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_102
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 4
+        width: 14
+        height: 28
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fcc3b6e739b4ea48a837bf0c4ef5f55
+      internalID: 367685983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: CL_Crops_winter_103
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 2
+        width: 15
+        height: 25
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158d1e11c1b92ef44a0cda7d2c843106
+      internalID: -359480105
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
     spriteID: 44c4837a253ef3f44a46017231f446e1
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      CL_Crops_winter_23: 319456129
+      CL_Crops_winter_32: -1400009845
+      CL_Crops_winter_5: -2097158008
+      CL_Crops_winter_50: 1071875845
+      CL_Crops_winter_36: 1829093662
+      CL_Crops_winter_4: 2047815884
+      CL_Crops_winter_101: 481325330
+      CL_Crops_winter_13: -1678603320
+      CL_Crops_winter_28: 1092477681
+      CL_Crops_winter_29: -1978148585
+      CL_Crops_winter_100: 1087014942
+      CL_Crops_winter_26: 629347449
+      CL_Crops_winter_68: -163194071
+      CL_Crops_winter_42: 186191868
+      CL_Crops_winter_57: -57615869
+      CL_Crops_winter_66: -842000866
+      CL_Crops_winter_61: -497384187
+      CL_Crops_winter_0: 805816885
+      CL_Crops_winter_87: -370625493
+      CL_Crops_winter_67: -1296469297
+      CL_Crops_winter_22: 839797796
+      CL_Crops_winter_43: -1821947268
+      CL_Crops_winter_17: 1377265887
+      CL_Crops_winter_48: -96812064
+      CL_Crops_winter_1: 1507495710
+      CL_Crops_winter_11: -1149719674
+      CL_Crops_winter_2: -447166031
+      CL_Crops_winter_45: 1829512544
+      CL_Crops_winter_92: 74031503
+      CL_Crops_winter_19: -473538149
+      CL_Crops_winter_21: -1594373280
+      CL_Crops_winter_89: -1727368795
+      CL_Crops_winter_20: 400457254
+      CL_Crops_winter_9: -531750378
+      CL_Crops_winter_71: 298651840
+      CL_Crops_winter_97: 384190941
+      CL_Crops_winter_24: -526152575
+      CL_Crops_winter_76: -1695797511
+      CL_Crops_winter_65: -188664446
+      CL_Crops_winter_31: -1674642491
+      CL_Crops_winter_47: 1283308062
+      CL_Crops_winter_95: 1018109407
+      CL_Crops_winter_15: -1540455423
+      CL_Crops_winter_81: 1344836817
+      CL_Crops_winter_85: -1792869453
+      CL_Crops_winter_103: -359480105
+      CL_Crops_winter_77: -1706877162
+      CL_Crops_winter_12: 1294707614
+      CL_Crops_winter_6: -254063031
+      CL_Crops_winter_69: 59476303
+      CL_Crops_winter_74: 1772269924
+      CL_Crops_winter_10: -290291703
+      CL_Crops_winter_59: -2078836786
+      CL_Crops_winter_35: -796299346
+      CL_Crops_winter_38: 168037885
+      CL_Crops_winter_41: 1414972590
+      CL_Crops_winter_55: 1840789547
+      CL_Crops_winter_58: -5838377
+      CL_Crops_winter_44: 1183551548
+      CL_Crops_winter_102: 367685983
+      CL_Crops_winter_62: -2098694226
+      CL_Crops_winter_49: -2000111134
+      CL_Crops_winter_93: -482541737
+      CL_Crops_winter_33: 1200781859
+      CL_Crops_winter_51: 41392758
+      CL_Crops_winter_82: -1717422596
+      CL_Crops_winter_73: -842947431
+      CL_Crops_winter_94: -245582277
+      CL_Crops_winter_37: 2035337206
+      CL_Crops_winter_27: -307626472
+      CL_Crops_winter_80: 1318270839
+      CL_Crops_winter_86: 83400896
+      CL_Crops_winter_46: 1842183243
+      CL_Crops_winter_98: 2029994449
+      CL_Crops_winter_90: -2068670478
+      CL_Crops_winter_83: 422824499
+      CL_Crops_winter_91: -1434695255
+      CL_Crops_winter_64: 214869244
+      CL_Crops_winter_7: -2024100523
+      CL_Crops_winter_56: 385414149
+      CL_Crops_winter_18: 806447444
+      CL_Crops_winter_60: -1661105169
+      CL_Crops_winter_39: -974649526
+      CL_Crops_winter_84: -1934193201
+      CL_Crops_winter_53: 1088655021
+      CL_Crops_winter_75: -2078155177
+      CL_Crops_winter_99: -494196391
+      CL_Crops_winter_16: 895127178
+      CL_Crops_winter_79: 313130864
+      CL_Crops_winter_25: -1636938435
+      CL_Crops_winter_72: -145695029
+      CL_Crops_winter_70: -338340489
+      CL_Crops_winter_40: 668494762
+      CL_Crops_winter_63: 1164930289
+      CL_Crops_winter_96: 1827438505
+      CL_Crops_winter_3: 341512355
+      CL_Crops_winter_8: -403875901
+      CL_Crops_winter_52: 1656877040
+      CL_Crops_winter_78: 1628758984
+      CL_Crops_winter_30: -1477032817
+      CL_Crops_winter_88: 1028901476
+      CL_Crops_winter_34: -1671381112
+      CL_Crops_winter_54: 1349118756
+      CL_Crops_winter_14: 1022344146
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
