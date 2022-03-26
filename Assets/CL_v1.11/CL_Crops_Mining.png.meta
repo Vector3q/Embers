@@ -299,9 +299,9 @@ TextureImporter:
       name: CL_Crops_Mining_8
       rect:
         serializedVersion: 2
-        x: 352
-        y: 528
-        width: 79
+        x: 383
+        y: 530
+        width: 19
         height: 30
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
@@ -1523,7 +1523,7 @@ TextureImporter:
         height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 59}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1544,7 +1544,7 @@ TextureImporter:
         height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 59}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1565,7 +1565,7 @@ TextureImporter:
         height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 59}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -1586,7 +1586,7 @@ TextureImporter:
         height: 139
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 60}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -5744,7 +5744,7 @@ TextureImporter:
         height: 153
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 75}
+      border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
@@ -8086,7 +8086,6 @@ TextureImporter:
       CL_Crops_Mining_3: 97411018
       CL_Crops_Mining_25: 1850333237
       CL_Crops_Mining_329: -334398122
-      CL_Crops_Mining_362: -178395777
       CL_Crops_Mining_238: 1385627365
       CL_Crops_Mining_66: -1125545372
       CL_Crops_Mining_268: 705471146
