@@ -5657,10 +5657,9 @@ TextureImporter:
       CL_Crafting_78: 21300156
       CL_Crafting_12: 21300024
       CL_Crafting_69: 21300138
-      CL_Crafting_144: 21300288
-      CL_Crafting_104: 21300208
-      CL_Crafting_14: 21300028
       CL_Crafting_150: 21300300
+      CL_Crafting_144: 21300288
+      CL_Crafting_14: 21300028
       CL_Crafting_227: 21300454
       CL_Crafting_153: 21300306
       CL_Crafting_3: 21300006
@@ -5672,6 +5671,7 @@ TextureImporter:
       CL_Crafting_66: 21300132
       CL_Crafting_177: 21300354
       CL_Crafting_1: 21300002
+      CL_Crafting_104: 21300208
       CL_Crafting_45: 21300090
       CL_Crafting_89: 21300178
       CL_Crafting_90: 21300180
@@ -5767,12 +5767,12 @@ TextureImporter:
       CL_Crafting_223: 21300446
       CL_Crafting_228: 21300456
       CL_Crafting_88: 21300176
-      CL_Crafting_80: 21300160
       CL_Crafting_130: 21300260
+      CL_Crafting_222: 21300444
       CL_Crafting_165: 21300330
       CL_Crafting_8: 21300016
       CL_Crafting_105: 21300210
-      CL_Crafting_222: 21300444
+      CL_Crafting_80: 21300160
       CL_Crafting_146: 21300292
       CL_Crafting_202: 21300404
       CL_Crafting_29: 21300058
