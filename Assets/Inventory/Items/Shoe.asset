@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f158056e44168b44eab11f0e1cb1a140, type: 3}
-  m_Name: sword
+  m_Name: Shoe
   m_EditorClassIdentifier: 
-  itemName: sword
-  itemImage: {fileID: 21300000, guid: af50dc4fa7b6d314895d0f8c79adb4a5, type: 3}
+  itemName: Shoe
+  itemImage: {fileID: 21300000, guid: b634c8a51d4a2d440b44719a9c1329ba, type: 3}
   itemHeld: 1
-  itemInfo: Hello World
-  equip: 1
+  itemInfo: This is a shoe!
+  equip: 0

@@ -7,5 +7,10 @@ public class Slot : MonoBehaviour
 {
     public Item slotItem; 
     public Image slotImage;
-    public Text slotNum;
+    public Text slotNum; 
+
+    public void ItemOnClicked()
+    {
+        InventroyManager.updateItemInfo(slotItem.itemInfo);
+    }
 }
