@@ -5,13 +5,17 @@ using UnityEngine;
 public class PlayerController : MonoBehaviour
 {
     public float speed;
+    //背包
+    public GameObject bag;
 
-    Animator animator;
+    bool isOpen;
+
+    //Animator animator;
     Vector3 movement;
-    // Start is called before the first frame update
+
     void Start()
     {
-        animator = GetComponent<Animator>();
+        //animator = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -21,18 +25,34 @@ public class PlayerController : MonoBehaviour
 
         transform.Translate(movement);//移动
 
-        if (movement != Vector3.zero)//动画
-        {
-            animator.SetBool("running", true);
-        }
-        else
-        {
-            animator.SetBool("running", false);
-        }
+        //if (movement != Vector3.zero)//动画
+        //{
+        //    animator.SetBool("running", true);
+        //}
+        //else
+        //{
+        //    animator.SetBool("running", false);
+        //}
 
-        if (movement.x > 0)//翻脸
-            transform.localScale = new Vector3(1, 1, 1);
-        if (movement.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);
+        //if (movement.x > 0)//翻脸
+        //    transform.localScale = new Vector3(1, 1, 1);
+        //if (movement.x < 0)
+        //    transform.localScale = new Vector3(-1, 1, 1);
+
+        OpenMyBag();
+    }
+
+    void OpenMyBag()
+    {
+        if(Input.GetKeyDown(KeyCode.M))
+        {
+            isOpen = !isOpen;
+            bag.SetActive(isOpen);
+        }
+        if(Input.GetKeyDown(KeyCode.Escape) && isOpen)
+        {
+            isOpen = false;
+            bag.SetActive(isOpen);
+        }
     }
 }
