@@ -12,6 +12,9 @@ GameObject:
   - component: {fileID: 5632345519138145831}
   - component: {fileID: 3514069400510291984}
   - component: {fileID: 4876270895377975271}
+  - component: {fileID: 7354915691015759437}
+  - component: {fileID: 5201879426158906110}
+  - component: {fileID: 1425545091714138061}
   m_Layer: 5
   m_Name: Item
   m_TagString: Untagged
@@ -135,6 +138,52 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &7354915691015759437
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987179581618688259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 39ced2fac8d3a874990790e13bfd4252, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  originalParent: {fileID: 0}
+  bag: {fileID: 11400000, guid: 0213ca040fac6fe4099f84fd1c8401ee, type: 2}
+--- !u!225 &5201879426158906110
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987179581618688259}
+  m_Enabled: 1
+  m_Alpha: 1
+  m_Interactable: 1
+  m_BlocksRaycasts: 1
+  m_IgnoreParentGroups: 0
+--- !u!114 &1425545091714138061
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3987179581618688259}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306cc8c2b49d7114eaa3623786fc2126, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreLayout: 1
+  m_MinWidth: -1
+  m_MinHeight: -1
+  m_PreferredWidth: -1
+  m_PreferredHeight: -1
+  m_FlexibleWidth: -1
+  m_FlexibleHeight: -1
+  m_LayoutPriority: 1
 --- !u!1 &7330463442305923610
 GameObject:
   m_ObjectHideFlags: 0
@@ -438,7 +487,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dc8f2d563bc0ea740a6110b25995fc05, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  slotID: 0
   slotItem: {fileID: 0}
   slotImage: {fileID: 1481477186456904244}
   slotNum: {fileID: 1898092706251839452}
+  slotInfo: 
   itemInSlot: {fileID: 3987179581618688259}

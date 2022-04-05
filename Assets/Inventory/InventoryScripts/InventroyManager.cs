@@ -31,17 +31,6 @@ public class InventroyManager : MonoBehaviour
         instance.itemInfo.text = ItemDescription;
     }
 
-    //public static void CreateNewItem(Item item)
-    //{
-    //    Debug.Log(1);
-    //    Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
-    //    //成为Grid的子集
-    //    newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
-        
-    //    newItem.slotItem = item;
-    //    newItem.slotImage.sprite = item.itemImage;
-    //    newItem.slotNum.text = item.itemHeld.ToString();
-    //}
     public static void RefreshItem()
     {
         for(int i = 0; i<instance.slotGrid.transform.childCount; i++)
@@ -56,6 +45,7 @@ public class InventroyManager : MonoBehaviour
         {
             instance.slots.Add(Instantiate(instance.emptyslot));
             instance.slots[i].transform.SetParent(instance.slotGrid.transform);
+            instance.slots[i].GetComponent<Slot>().slotID = i;
             instance.slots[i].GetComponent<Slot>().SetupSlot(instance.bag.itemList[i]);     
         }
     }
