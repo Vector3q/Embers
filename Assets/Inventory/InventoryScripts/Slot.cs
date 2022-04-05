@@ -15,7 +15,7 @@ public class Slot : MonoBehaviour
      
     public void ItemOnClicked()
     {
-        InventroyManager.updateItemInfo(slotItem.itemInfo);
+        InventroyManager.updateItemInfo(slotInfo);
     }
 
     public void SetupSlot(Item item)

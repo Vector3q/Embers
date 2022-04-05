@@ -36,7 +36,7 @@ public class ItemOnDrag : MonoBehaviour,IBeginDragHandler,IDragHandler,IEndDragH
                 bag.itemList[eventData.pointerCurrentRaycast.gameObject.GetComponentInParent<Slot>().slotID] = temp;
 
                 eventData.pointerCurrentRaycast.gameObject.transform.parent.position = originalParent.position;
-                eventData.pointerCurrentRaycast.gameObject.transform.SetParent(originalParent);
+                eventData.pointerCurrentRaycast.gameObject.transform.parent.SetParent(originalParent);
                 GetComponent<CanvasGroup>().blocksRaycasts = true;
                 return;
             }
