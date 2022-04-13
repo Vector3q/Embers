@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
     public float speed;
     //背包
     public GameObject bag;
-
+    public GameObject wordOnUse;
     bool isOpen;
 
     Animator animator;

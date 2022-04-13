@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+/// <summary>
+/// 界面动画，不用增减脚本
+/// </summary>
 public class zoomController : MonoBehaviour
 {
     float zoomsize;
