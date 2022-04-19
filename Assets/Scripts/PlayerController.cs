@@ -4,17 +4,24 @@ using UnityEngine;
 
 public class PlayerController : MonoBehaviour
 {
+    //速度
     public float speed;
     //背包
     public GameObject bag;
-    public GameObject wordOnUse;
+    //人物所携带的物体
+    public Item Equipment_weapon;
+    //背包中选中的物体
+    static public Item Selected_Equipment;
+
+    //背包是否打开
     bool isOpen;
+
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
     Rigidbody2D rigidbody2d;
-   
+    
     Vector3 movement;
 
     float horizontal;
@@ -91,5 +98,11 @@ public class PlayerController : MonoBehaviour
             isOpen = false;
             bag.SetActive(isOpen);
         }
+    }
+
+    public void EquipmentReplace()
+    {
+        Equipment_weapon = null;
+        Equipment_weapon = Selected_Equipment;
     }
 }
