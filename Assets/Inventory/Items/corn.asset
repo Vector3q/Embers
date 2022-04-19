@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f158056e44168b44eab11f0e1cb1a140, type: 3}
   m_Name: corn
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: corn
   itemImage: {fileID: -113193783, guid: 66d449fc60e54d54a8a2bc939aaa016a, type: 3}
   itemHeld: 0
   itemInfo: 
