@@ -1,31 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.UI;
 
 public class PlayerController : MonoBehaviour
 {
-
-    //速度
     public float speed;
     //背包
     public GameObject bag;
-    //人物所携带的物体
-    public Item Equipment_weapon;
-    //背包中选中的物体
-    static public Item Selected_Equipment;
-
-    public Plane synthesisPlane;
-
-    //背包是否打开
+    public GameObject wordOnUse;
     bool isOpen;
-
 
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
     Rigidbody2D rigidbody2d;
-    
+   
     Vector3 movement;
 
     float horizontal;
@@ -102,16 +91,5 @@ public class PlayerController : MonoBehaviour
             isOpen = false;
             bag.SetActive(isOpen);
         }
-    }
-    public bool isSpecial(Item item)
-    {
-        if (item.itemName == "paper")
-            return true;
-        return false;
-    }
-    public void EquipmentReplace()
-    {
-        if(!isSpecial(Selected_Equipment))
-            Equipment_weapon = Selected_Equipment;
     }
 }
