@@ -16,6 +16,9 @@ public class Slot : MonoBehaviour
     public void ItemOnClicked()
     {
         InventroyManager.updateItemInfo(slotInfo);
+        
+        PlayerController.Selected_Equipment = this.slotItem;
+
     }
 
     public void SetupSlot(Item item)
@@ -26,6 +29,7 @@ public class Slot : MonoBehaviour
             return;
         }
 
+        slotItem = item;
         slotImage.sprite = item.itemImage;
         slotNum.text = item.itemHeld.ToString();
         slotInfo = item.itemInfo;
