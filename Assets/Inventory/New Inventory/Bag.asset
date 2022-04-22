@@ -13,16 +13,16 @@ MonoBehaviour:
   m_Name: Bag
   m_EditorClassIdentifier: 
   itemList:
+  - {fileID: 11400000, guid: 4dafa23c25bc1f947aaddb1d54f575c7, type: 2}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   - {fileID: 11400000, guid: 87511157a65b422439f33b911a86e4c8, type: 2}
   - {fileID: 11400000, guid: 4a4577ac47b01424697fe8a664c84efe, type: 2}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
-  - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
   - {fileID: 0}
