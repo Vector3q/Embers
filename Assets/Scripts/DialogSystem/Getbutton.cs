@@ -1,12 +1,11 @@
-﻿using System.Collections;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TalkButton : MonoBehaviour
+public class Getbutton : MonoBehaviour
 {
     public GameObject Button;
     public GameObject talkUI;
-
     private void OnTriggerEnter2D(Collider2D other)
     {
         Button.SetActive(true);
@@ -24,5 +23,4 @@ public class TalkButton : MonoBehaviour
             talkUI.SetActive(true);
         }
     }
-
 }
