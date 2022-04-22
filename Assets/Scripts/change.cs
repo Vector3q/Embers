@@ -16,8 +16,8 @@ public class change : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (judge)
-        {
+        if (GameObject.Find("Player").GetComponent <PlayerController>().Equipment_weapon.itemName=="Corn"&& Input.GetKeyDown(KeyCode.I)) { 
+        
             miss.SetActive(false);
             obj.SetActive(true);
         }

@@ -6,10 +6,10 @@ public class TiggerTest : MonoBehaviour
 {
     public GameObject prompt;
     public GameObject pickobject;
+    public Collider2D collider2;
+    bool judge=false;
     public void Show(GameObject prompt)
     {
-        //用来将某个物体激活或是禁用（这里是prompt，也就是那个图标
-        //禁用时这个物体和其子物体都会禁用，包括上面的脚本，在这里很方便
         prompt.SetActive(true);
     }
     public void Hide(GameObject prompt)
@@ -18,21 +18,21 @@ public class TiggerTest : MonoBehaviour
     }
     void OnTriggerEnter2D(Collider2D other)//接触时触发，无需调用
     {
-       // Debug.Log(Time.time + ":进入该触发器的对象是：" + other.gameObject.name);
+        judge = true;
         Show(prompt);
     }
     void OnTriggerStay2D(Collider2D other)    //每帧调用一次OnTriggerStay()函数
     {
-        //Debug.Log(Time.time + "留在触发器的对象是：" + other.gameObject.name);
+        
     }
     void OnTriggerExit2D(Collider2D other)
     {
-        //Debug.Log(Time.time + "离开触发器的对象是：" + other.gameObject.name);
+        judge = false;
         Hide(prompt);
     }
   
 
-    // Start is called before the first frame update
+    
     void Start()
     {
         Hide(prompt);
@@ -41,7 +41,7 @@ public class TiggerTest : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E))
+        if (Input.GetKeyDown(KeyCode.E)&&judge==true)
         {
             Destroy(pickobject);
             Debug.Log("shuchula");
