@@ -201,7 +201,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 18857155}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -19.3, z: -10}
+  m_LocalPosition: {x: -0.1, y: -145.6, z: -10}
   m_LocalScale: {x: 0.049686175, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -19876,7 +19876,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.9277267, y: 1}
+    m_SensorSize: {x: 1.9264128, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -19893,7 +19893,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 662607490}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.1, y: -19.3, z: -10}
+  m_LocalPosition: {x: -0.1, y: -145.6, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -19960,7 +19960,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 688927066}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -56548,7 +56548,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -19.3
+      value: -145.6
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -56588,7 +56588,7 @@ PrefabInstance:
       objectReference: {fileID: 1446630823}
     - target: {fileID: 8766229588429321484, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: speed
-      value: 100
+      value: 80
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 1624020221339705323, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
@@ -56951,6 +56951,10 @@ PrefabInstance:
     - target: {fileID: 5719304774275702622, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
       propertyPath: m_AnchoredPosition.y
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6176583957433010879, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
+      propertyPath: m_Name
+      value: Btn_Use
       objectReference: {fileID: 0}
     - target: {fileID: 6866138105501411572, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
       propertyPath: m_AnchorMax.y

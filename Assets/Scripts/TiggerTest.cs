@@ -10,7 +10,6 @@ public class TiggerTest : MonoBehaviour
     bool judge=false;
     public void Show(GameObject prompt)
     {
-       
         prompt.SetActive(true);
     }
     public void Hide(GameObject prompt)
