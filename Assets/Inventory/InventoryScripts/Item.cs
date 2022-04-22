@@ -12,5 +12,4 @@ public class Item : ScriptableObject
     public string itemInfo;
 
     public bool equip;
-    public bool isword;
 }
