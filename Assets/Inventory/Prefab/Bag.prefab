@@ -394,6 +394,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c1d4b11c33346684ea3608afe0aa6b0c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  planeSynthesis: {fileID: 6394557436171671930}
 --- !u!1 &2007847006492965848
 GameObject:
   m_ObjectHideFlags: 0
@@ -1000,7 +1001,7 @@ MonoBehaviour:
         m_CallState: 2
       - m_Target: {fileID: 9191575880006328601}
         m_TargetAssemblyTypeName: DetectSpecial, Assembly-CSharp
-        m_MethodName: detectSomething
+        m_MethodName: SynthesisWord
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -1103,8 +1104,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 72fa7c74b39bf544c9af00ecc4ae8d29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  leftword: {fileID: 0}
-  rightword: {fileID: 0}
+  successword: {fileID: 0}
   leftImage: {fileID: 2479429035233679292}
   rightImage: {fileID: 8218324088082639649}
   successImage: {fileID: 2239260624650718077}
