@@ -14,13 +14,14 @@ public class PlayerController : MonoBehaviour
     public Item Equipment_weapon;
     //背包中选中的物体
     static public Item Selected_Equipment;
-
+    //合成界面
     public Plane synthesisPlane;
+
 
     //背包是否打开
     bool isOpen;
 
-
+    //动画管理器
     Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
@@ -89,7 +90,9 @@ public class PlayerController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
     }*/
-
+    /// <summary>
+    /// M键打开关闭背包
+    /// </summary>
     void OpenMyBag()
     {
         if(Input.GetKeyDown(KeyCode.M))
@@ -103,15 +106,30 @@ public class PlayerController : MonoBehaviour
             bag.SetActive(isOpen);
         }
     }
+    /// <summary>
+    /// 检测是否有使用特殊物品
+    /// </summary>
+    /// <param name="item"></param>
+    /// <returns></returns>
     public bool isSpecial(Item item)
     {
         if (item.itemName == "paper")
             return true;
         return false;
     }
+    /// <summary>
+    /// Use按键替换player携带的武器
+    /// </summary>
     public void EquipmentReplace()
     {
-        if(!isSpecial(Selected_Equipment))
+        if(!isSpecial(Selected_Equipment) && !DetectSpecial.planeSynthesis.gameObject.activeSelf)//所选物品不是特殊物体并且合成界面未打开
             Equipment_weapon = Selected_Equipment;
+    }
+    void SynthesisWord()
+    {
+        if(DetectSpecial.planeSynthesis.gameObject.activeSelf)
+        {
+
+        }
     }
 }
