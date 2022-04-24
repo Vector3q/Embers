@@ -122,14 +122,8 @@ public class PlayerController : MonoBehaviour
     /// </summary>
     public void EquipmentReplace()
     {
-        if(!isSpecial(Selected_Equipment) && !DetectSpecial.planeSynthesis.gameObject.activeSelf)//所选物品不是特殊物体并且合成界面未打开
+        if(!isSpecial(Selected_Equipment))//所选物品不是特殊物体并且合成界面未打开
             Equipment_weapon = Selected_Equipment;
-    }
-    void SynthesisWord()
-    {
-        if(DetectSpecial.planeSynthesis.gameObject.activeSelf)
-        {
-
-        }
+        Debug.Log(Equipment_weapon);
     }
 }

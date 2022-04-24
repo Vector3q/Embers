@@ -18,7 +18,6 @@ public class Slot : MonoBehaviour
         InventroyManager.updateItemInfo(slotInfo);
         
         PlayerController.Selected_Equipment = this.slotItem;
-
     }
 
     public void SetupSlot(Item item)

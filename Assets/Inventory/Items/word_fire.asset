@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: word_fire
   m_EditorClassIdentifier: 
   itemName: fire
-  itemImage: {fileID: 21300000, guid: de38d808594e3f7429d74fadb05c905b, type: 3}
+  itemImage: {fileID: 21300000, guid: 4f13032fb3816a14a85c02f79d8fcb2c, type: 3}
   itemHeld: 0
-  itemInfo: 
+  itemInfo: fire
   equip: 0
   isword: 1
