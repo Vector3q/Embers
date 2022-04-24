@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Dialog : MonoBehaviour
 {
+
     [Header("UI组件")]
     public Text textLabel;
     public Image faceimage;
@@ -41,6 +42,7 @@ public class Dialog : MonoBehaviour
         if(Input.GetKeyDown(KeyCode.R)&&index ==textList.Count)//代表文本结束了
         {
             gameObject.SetActive(false);//直接将文本框关闭
+            if(gameObject!=null)
             index = 0;//序列归零
             return;
         }
