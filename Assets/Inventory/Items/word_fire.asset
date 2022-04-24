@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f158056e44168b44eab11f0e1cb1a140, type: 3}
   m_Name: word_fire
   m_EditorClassIdentifier: 
-  itemName: fire
-  itemImage: {fileID: 21300000, guid: de38d808594e3f7429d74fadb05c905b, type: 3}
+  itemName: 
+  itemImage: {fileID: 0}
   itemHeld: 0
   itemInfo: 
   equip: 0
