@@ -13,8 +13,8 @@ MonoBehaviour:
   m_Name: word_autumn
   m_EditorClassIdentifier: 
   itemName: autumn
-  itemImage: {fileID: 21300000, guid: cc5af040dc329cd45accd6b988fda836, type: 3}
+  itemImage: {fileID: 21300000, guid: 332dacb4c41560f42a20f10c6783e7de, type: 3}
   itemHeld: 0
-  itemInfo: autumn
+  itemInfo: 
   equip: 0
-  isword: 1
+  isword: 0
