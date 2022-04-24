@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     //速度
-    public float speed;
+    public float speed=2.0f;
     //背包
     public GameObject bag;
     //人物所携带的物体
@@ -22,7 +22,7 @@ public class PlayerController : MonoBehaviour
     bool isOpen;
 
     //动画管理器
-    Animator animator;
+    public Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
 
     Rigidbody2D rigidbody2d;
@@ -41,6 +41,35 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        Move();
+        Attack();
+        OpenMyBag();
+    }
+    /*void FixedUpdate()
+    {
+        Vector2 position = rigidbody2d.position;
+        position.x = position.x + speed * horizontal * Time.deltaTime;
+        position.y = position.y + speed * vertical * Time.deltaTime;
+
+        rigidbody2d.MovePosition(position);
+    }*/
+    /// <summary>
+    /// M键打开关闭背包
+    /// </summary>
+    /// 
+
+    //攻击的函数
+    void Attack()
+    {
+        if (Input.GetButtonDown("Attack")) 
+        {
+            animator.SetTrigger("Attack");
+        }
+    }
+
+    //行走的函数
+    void Move()
+    {
         //movement = new Vector3(Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed, Input.GetAxisRaw("Vertical") * Time.deltaTime * speed, 0);
 
         //transform.Translate(movement);//移动
@@ -56,6 +85,12 @@ public class PlayerController : MonoBehaviour
             lookDirection.Normalize();
         }
 
+        /*if (movement.x > 0)//翻脸
+            transform.localScale = new Vector3(1, 1, 1);
+        if (movement.x < 0)
+            transform.localScale = new Vector3(-1, 1, 1);*/
+
+        //把朝向的信息传给animator
         animator.SetFloat("MoveX", lookDirection.x);
         animator.SetFloat("MoveY", lookDirection.y);
         animator.SetFloat("running", move.magnitude);
@@ -75,24 +110,10 @@ public class PlayerController : MonoBehaviour
         //    animator.SetBool("running", false);
         //}
 
-        //if (movement.x > 0)//翻脸
-        //    transform.localScale = new Vector3(1, 1, 1);
-        //if (movement.x < 0)
-        //    transform.localScale = new Vector3(-1, 1, 1);
+        
 
-        OpenMyBag();
     }
-    /*void FixedUpdate()
-    {
-        Vector2 position = rigidbody2d.position;
-        position.x = position.x + speed * horizontal * Time.deltaTime;
-        position.y = position.y + speed * vertical * Time.deltaTime;
 
-        rigidbody2d.MovePosition(position);
-    }*/
-    /// <summary>
-    /// M键打开关闭背包
-    /// </summary>
     void OpenMyBag()
     {
         if(Input.GetKeyDown(KeyCode.M))
