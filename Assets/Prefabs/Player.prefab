@@ -102,6 +102,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 0
   bag: {fileID: 0}
+  Equipment_weapon: {fileID: 0}
+  animator: {fileID: 0}
 --- !u!50 &7939599268938551111
 Rigidbody2D:
   serializedVersion: 4
@@ -136,7 +138,7 @@ BoxCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0816572, y: -0.15967815}
+  m_Offset: {x: -0.058187783, y: -0.13360107}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -147,7 +149,7 @@ BoxCollider2D:
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.39668566, y: 0.27917168}
+  m_Size: {x: 0.28716195, y: 0.33132577}
   m_EdgeRadius: 0
 --- !u!95 &1300273177521667172
 Animator:
