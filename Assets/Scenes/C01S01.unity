@@ -52148,5 +52148,9 @@ PrefabInstance:
       propertyPath: planeSynthesis
       value: 
       objectReference: {fileID: 1734227623}
+    - target: {fileID: 9191575880006328601, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
+      propertyPath: playerInventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 0213ca040fac6fe4099f84fd1c8401ee, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}

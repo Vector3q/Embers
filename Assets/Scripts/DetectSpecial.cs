@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using System.Threading;
 
 public class DetectSpecial : MonoBehaviour
 {
@@ -23,6 +24,7 @@ public class DetectSpecial : MonoBehaviour
     public Image successImage;
     //ÔØÈëÎÄ×ÖÍ¼¼ø
     public Inventory wordList;
+    public Inventory playerInventory;
 
     private void Start()
     {
@@ -68,11 +70,29 @@ public class DetectSpecial : MonoBehaviour
     {
         if(leftImage.sprite == word_seed.itemImage && rightImage.sprite == word_fire.itemImage)
         {
-            if (!wordList.itemList.Contains(word_autumn))
+            addword(word_autumn);
+        }
+        InventroyManager.RefreshItem();
+    }
+
+    void addword(Item worditem)
+    {
+        if (!wordList.itemList.Contains(worditem))
+        {
+            wordList.itemList.Add(worditem);
+
+            successImage.gameObject.SetActive(true);
+            successImage.sprite = worditem.itemImage;
+
+            for (int i = 0; i < playerInventory.itemList.Count; i++)
             {
-                successImage.gameObject.SetActive(true);
-                successImage.sprite = word_autumn.itemImage;
+                if (playerInventory.itemList[i] == null)
+                {
+                    playerInventory.itemList[i] = worditem;
+                    break;
+                }
             }
         }
+
     }
 }
