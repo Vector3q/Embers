@@ -21,6 +21,9 @@ public class DetectSpecial : MonoBehaviour
     public Image leftImage;
     public Image rightImage;
     public Image successImage;
+    //ÔØÈëÎÄ×ÖÍ¼¼ø
+    public Inventory wordList;
+
     private void Start()
     {
         whichone = 0;
@@ -65,8 +68,11 @@ public class DetectSpecial : MonoBehaviour
     {
         if(leftImage.sprite == word_seed.itemImage && rightImage.sprite == word_fire.itemImage)
         {
-            successImage.gameObject.SetActive(true);
-            successImage.sprite = word_autumn.itemImage;
+            if (!wordList.itemList.Contains(word_autumn))
+            {
+                successImage.gameObject.SetActive(true);
+                successImage.sprite = word_autumn.itemImage;
+            }
         }
     }
 }

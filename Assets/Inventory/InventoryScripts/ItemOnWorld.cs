@@ -6,6 +6,7 @@ public class ItemOnWorld : MonoBehaviour
 {
     public Item thisItem;
     public Inventory playerInventory;
+    public Inventory wordList;
 
     private void Start()
     {
@@ -28,6 +29,15 @@ public class ItemOnWorld : MonoBehaviour
     {
         if(!playerInventory.itemList.Contains(thisItem))
         {
+            //文字图鉴收集
+            if(thisItem.isword)
+            {
+                if(!wordList.itemList.Contains(thisItem))
+                {
+                    wordList.itemList.Add(thisItem);
+                }
+            }
+            //物品收集（包括文字）
             //playerInventory.itemList.Add(thisItem);
             for(int i=0; i<playerInventory.itemList.Count;i++)
             {
