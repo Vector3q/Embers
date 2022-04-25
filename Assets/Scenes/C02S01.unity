@@ -85070,17 +85070,21 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 8400030147562771927, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_RootOrder
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -7.1652
+      value: -0.97
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.2906
+      value: 1.61
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.z
