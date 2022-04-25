@@ -5,6 +5,11 @@ using UnityEngine.UI;
 
 public class DetectSpecial : MonoBehaviour
 {
+    public Item word_fire;
+    public Item word_seed;
+    public Item word_autumn;
+
+
     //合成界面
     public GameObject planeSynthesis;
     static public bool Detected;
@@ -58,18 +63,10 @@ public class DetectSpecial : MonoBehaviour
     }
     public void SynthesisWord()
     {
-        Debug.Log(1);
-        if (planeSynthesis.gameObject.activeSelf)
+        if(leftImage.sprite == word_seed.itemImage && rightImage.sprite == word_fire.itemImage)
         {
-            if (WordSynthesis.leftword == null && PlayerController.Selected_Equipment.isword)
-            {
-                Debug.Log(1);
-                WordSynthesis.leftword = PlayerController.Selected_Equipment;
-            }
-            else if (WordSynthesis.leftword != null && PlayerController.Selected_Equipment.isword)
-            {
-                WordSynthesis.rightword = PlayerController.Selected_Equipment;
-            }
+            successImage.gameObject.SetActive(true);
+            successImage.sprite = word_autumn.itemImage;
         }
     }
 }
