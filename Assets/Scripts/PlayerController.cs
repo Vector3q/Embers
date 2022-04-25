@@ -77,23 +77,14 @@ public class PlayerController : MonoBehaviour
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        Vector2 move = new Vector2(horizontal, vertical);
-
-        if (!Mathf.Approximately(move.x, 0.0f) || !Mathf.Approximately(move.y, 0.0f))
-        {
-            lookDirection.Set(move.x, move.y);
-            lookDirection.Normalize();
-        }
-
         /*if (movement.x > 0)//翻脸
             transform.localScale = new Vector3(1, 1, 1);
         if (movement.x < 0)
             transform.localScale = new Vector3(-1, 1, 1);*/
 
         //把朝向的信息传给animator
-        animator.SetFloat("MoveX", lookDirection.x);
-        animator.SetFloat("MoveY", lookDirection.y);
-        animator.SetFloat("running", move.magnitude);
+        animator.SetFloat("MoveX", horizontal);
+        animator.SetFloat("MoveY", vertical);
 
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
