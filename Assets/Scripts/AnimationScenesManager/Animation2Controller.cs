@@ -6,10 +6,16 @@ using UnityEngine.SceneManagement;
 public class Animation2Controller : MonoBehaviour
 {
     // Start is called before the first frame update
+    public GameObject obje;
+    GameObject obj = null;
+    // Start is called before the first frame update
     void Start()
     {
-        
+        obj = GameObject.FindGameObjectWithTag("sound");
+        if (obj == null)
+            obj = (GameObject)Instantiate(obje);
     }
+
 
     // Update is called once per frame
     void Update()

@@ -5,6 +5,7 @@ TagManager:
   serializedVersion: 2
   tags:
   - knife
+  - sound
   layers:
   - Default
   - TransparentFX
