@@ -32,11 +32,21 @@ public class PlayerController : MonoBehaviour
     float horizontal;
     float vertical;
 
+    //原本物体的Scale信息
+    float ScaleX;
+    float ScaleY;  
+    float ScaleZ;
+
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        //初始设置为站立
         isRunning = false;
+        //获取原本的主角scale信息
+        ScaleX = transform.localScale.x;
+        ScaleY = transform.localScale.y;
+        ScaleZ = transform.localScale.z;
     }
 
     // Update is called once per frame
@@ -96,11 +106,11 @@ public class PlayerController : MonoBehaviour
             if (horizontal > 0.01f)
             {
                 //默认是左边
-                transform.localRotation = Quaternion.Euler(0, 0, 0);
+                transform.localScale = new Vector3(ScaleX, ScaleY, ScaleZ);
             }
             if(horizontal<-0.01f)
             {
-                transform.localRotation = Quaternion.Euler(0, 180, 0);
+                transform.localScale = new Vector3(-ScaleX, ScaleY, ScaleZ);
             }
 
         }

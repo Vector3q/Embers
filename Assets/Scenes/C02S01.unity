@@ -84985,6 +84985,8 @@ GameObject:
   m_Component:
   - component: {fileID: 464793834}
   - component: {fileID: 464793833}
+  - component: {fileID: 464793836}
+  - component: {fileID: 464793835}
   m_Layer: 0
   m_Name: Tiger0
   m_TagString: Enemy
@@ -85052,13 +85054,53 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464793832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 3.46, y: 0.940742, z: 0}
+  m_LocalPosition: {x: -2.16, y: 0.43, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &464793835
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464793832}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43e9e6cb8abe547479e818ad72c92338, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  health: 10
+  Attackdamage: 2
+--- !u!61 &464793836
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464793832}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0.058101535, y: -0.41639304}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 5.14, y: 5.06}
+    newSize: {x: 5.14, y: 5.06}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 5.023797, y: 3.9948082}
+  m_EdgeRadius: 0
 --- !u!1001 &544290731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85096,7 +85138,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7742485091108778077, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: SwordDamage
-      value: 1
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7742485091108778077, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: StartAttackTime

@@ -105,6 +105,9 @@ MonoBehaviour:
   bag: {fileID: 0}
   Equipment_weapon: {fileID: 0}
   animator: {fileID: 0}
+  ScaleX: 4
+  ScaleY: 4
+  ScaleZ: 4
 --- !u!50 &7939599268938551111
 Rigidbody2D:
   serializedVersion: 4
@@ -253,4 +256,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   SwordDamage: 0
-  WaitTime: 0.3
+  EndWaitTime: 0
+  StartAttackTime: 0

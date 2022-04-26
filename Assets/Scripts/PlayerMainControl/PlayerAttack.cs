@@ -50,4 +50,13 @@ public class PlayerAttack : MonoBehaviour
         yield return new WaitForSeconds(EndWaitTime);
         mcollider2D.enabled = false;
     }
+
+    //使用攻击的时候伤害到敌人调用
+    private void OnTriggerEnter2D(Collider2D other)
+    {
+        if (other.gameObject.CompareTag("Enemy"))
+        {
+            other.GetComponent<Enemy>().TakeDamage(SwordDamage);
+        }
+    }
 }
