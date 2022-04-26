@@ -84975,37 +84975,6 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
---- !u!1 &178850790
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 178850791}
-  m_Layer: 0
-  m_Name: SwordAttack
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!4 &178850791
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 178850790}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1162476542}
-  m_RootOrder: 0
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &464793832
 GameObject:
   m_ObjectHideFlags: 0
@@ -85101,6 +85070,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 2300919396051542818, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_SpriteTilingProperty.newSize.x
       value: 0.56
@@ -85111,7 +85084,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6686279323445438267, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_RootOrder
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742485091108778077, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: WaitTime
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742485091108778077, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: EndWaitTime
+      value: 0.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742485091108778077, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: SwordDamage
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7742485091108778077, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: StartAttackTime
+      value: 0.3
       objectReference: {fileID: 0}
     - target: {fileID: 8400030147562771927, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_Size.x
@@ -85195,11 +85184,6 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
---- !u!4 &1162476542 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
-  m_PrefabInstance: {fileID: 544290731}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1196739157
 GameObject:
   m_ObjectHideFlags: 0

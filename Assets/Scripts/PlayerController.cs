@@ -44,7 +44,6 @@ public class PlayerController : MonoBehaviour
     {
         FlipX();
         Move();
-        Attack();
         OpenMyBag();
     }
 
@@ -58,16 +57,6 @@ public class PlayerController : MonoBehaviour
         rigidbody2d.MovePosition(position);
     }*/
 
-
-    //攻击的函数
-    void Attack()
-    {
-        //按下攻击键进行攻击
-        if (Input.GetButtonDown("Attack")) 
-        {
-            animator.SetTrigger("Attack");
-        }
-    }
 
     //行走的函数
     void Move()
