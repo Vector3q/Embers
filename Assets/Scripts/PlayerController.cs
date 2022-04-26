@@ -7,7 +7,7 @@ public class PlayerController : MonoBehaviour
 {
 
     //速度
-    public float speed=2.0f;
+    public float speed;
     //背包
     public GameObject bag;
     //人物所携带的物体
@@ -16,15 +16,15 @@ public class PlayerController : MonoBehaviour
     static public Item Selected_Equipment;
     //合成界面
     public Plane synthesisPlane;
-
-
     //背包是否打开
     bool isOpen;
-
     //动画管理器
     public Animator animator;
     Vector2 lookDirection = new Vector2(1, 0);
+    //是否在行走
+    bool isRunning;
 
+    //角色刚体
     Rigidbody2D rigidbody2d;
     
     Vector3 movement;
@@ -36,15 +36,19 @@ public class PlayerController : MonoBehaviour
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        isRunning = false;
     }
 
     // Update is called once per frame
     void Update()
     {
+        FlipX();
         Move();
         Attack();
         OpenMyBag();
     }
+
+
     /*void FixedUpdate()
     {
         Vector2 position = rigidbody2d.position;
@@ -53,14 +57,12 @@ public class PlayerController : MonoBehaviour
 
         rigidbody2d.MovePosition(position);
     }*/
-    /// <summary>
-    /// M键打开关闭背包
-    /// </summary>
-    /// 
+
 
     //攻击的函数
     void Attack()
     {
+        //按下攻击键进行攻击
         if (Input.GetButtonDown("Attack")) 
         {
             animator.SetTrigger("Attack");
@@ -70,48 +72,64 @@ public class PlayerController : MonoBehaviour
     //行走的函数
     void Move()
     {
-        //movement = new Vector3(Input.GetAxisRaw("Horizontal") * Time.deltaTime * speed, Input.GetAxisRaw("Vertical") * Time.deltaTime * speed, 0);
-
-        //transform.Translate(movement);//移动
-
+        //获取x和y轴的变量
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
-        /*if (movement.x > 0)//翻脸
-            transform.localScale = new Vector3(1, 1, 1);
-        if (movement.x < 0)
-            transform.localScale = new Vector3(-1, 1, 1);*/
+        //判断是否正在跑步（在其他动画转跳的时候需要）
+        if (horizontal != 0 || vertical != 0)
+            isRunning = true;
+        else if (horizontal == 0&&vertical==0)
+            isRunning=false;
 
-        //把朝向的信息传给animator
+        //把朝向和是否正在跑步的信息传给animator
         animator.SetFloat("MoveX", horizontal);
         animator.SetFloat("MoveY", vertical);
+        animator.SetBool("Running", isRunning);
 
         Vector2 position = rigidbody2d.position;
         position.x = position.x + speed * horizontal * Time.deltaTime;
         position.y = position.y + speed * vertical * Time.deltaTime;
-
-        rigidbody2d.MovePosition(position);
-
-        //if (movement != Vector3.zero)//动画
-        //{
-        //    animator.SetBool("running", true);
-        //}
-        //else
-        //{
-        //    animator.SetBool("running", false);
-        //}
-
-        
+        rigidbody2d.MovePosition(position);       
 
     }
 
+    //将人物的模型和动画进行翻面,x轴翻面
+    void FlipX()
+    {
+        float horizontal = Input.GetAxis("Horizontal");
+        float vertical = Input.GetAxis("Vertical");
+        //检测玩家是否有速度
+        bool PlayerHasSpeed = horizontal != 0 || vertical != 0;
+
+        if(PlayerHasSpeed)
+        {
+            if (horizontal > 0.01f)
+            {
+                //默认是左边
+                transform.localRotation = Quaternion.Euler(0, 0, 0);
+            }
+            if(horizontal<-0.01f)
+            {
+                transform.localRotation = Quaternion.Euler(0, 180, 0);
+            }
+
+        }
+    }
+
+    /// <summary>
+    /// M键打开关闭背包
+    /// </summary>
+    /// 
     void OpenMyBag()
     {
+        //按下M键打开背包
         if(Input.GetKeyDown(KeyCode.M))
         {
             isOpen = !isOpen;
             bag.SetActive(isOpen);
         }
+        //按下Esc键关闭背包
         if(Input.GetKeyDown(KeyCode.Escape) && isOpen)
         {
             isOpen = false;
