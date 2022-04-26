@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class TiggerTest : MonoBehaviour
 {
-    public GameObject prompt;
-    public GameObject pickobject;
+    public GameObject prompt;//按E拾取
+    public GameObject pickobject;//要拾取的物体
     public Collider2D collider2;
     bool judge=false;
     public void Show(GameObject prompt)
@@ -44,7 +44,8 @@ public class TiggerTest : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E)&&judge==true)
         {
             Destroy(pickobject);
-            Debug.Log("shuchula");
+            //Debug.Log("shuchula");
+            //gameObject.AddComponent<ItemOnWorld>();
         }
     }
 }
