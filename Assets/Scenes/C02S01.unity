@@ -85101,6 +85101,18 @@ PrefabInstance:
       propertyPath: m_Name
       value: Player
       objectReference: {fileID: 0}
+    - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 0.56
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 0.64
+      objectReference: {fileID: 0}
+    - target: {fileID: 6686279323445438267, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: m_RootOrder
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 8400030147562771927, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_Size.x
       value: 0.56
@@ -104086,7 +104098,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 20
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2

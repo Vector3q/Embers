@@ -5,7 +5,6 @@ using UnityEngine;
 public class NewBehaviourScript1 : MonoBehaviour
 {
     public Animator anim;
-    public int PunchDamage;
     public int SwordDamage;
 
     // Start is called before the first frame update
