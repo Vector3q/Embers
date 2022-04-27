@@ -10,11 +10,15 @@ public class change2 : MonoBehaviour
     {
         
     }
-
+    void Plant()
+    {
+        string namep = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
+        if (namep == "plant")//ÖÖ
+            wuti.SetActive(true);
+    }
     // Update is called once per frame
     void Update()
     {
-        if(GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "plant")//ÖÖ
-        wuti.SetActive(true);
+        Plant();
     }
 }

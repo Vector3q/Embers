@@ -12,16 +12,20 @@ public class change1 : MonoBehaviour
     {
         
     }
-
-    // Update is called once per frame
-    void Update()
+    void Knife()
     {
-        if (GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "kinfe")//¹È
+        string namek = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
+        if (namek=="kinfe")//¹È
         {
 
             grow.SetActive(false);
             obj.SetActive(true);
             Debug.Log("ok");
         }
+    }
+    // Update is called once per frame
+    void Update()
+    {
+        Knife();
     }
 }
