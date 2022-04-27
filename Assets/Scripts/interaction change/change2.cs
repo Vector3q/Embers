@@ -14,7 +14,7 @@ public class change2 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.O))
+        if(GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "plant")//ÖÖ
         wuti.SetActive(true);
     }
 }

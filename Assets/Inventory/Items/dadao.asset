@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f158056e44168b44eab11f0e1cb1a140, type: 3}
   m_Name: dadao
   m_EditorClassIdentifier: 
-  itemName: 
+  itemName: kinfe
   itemImage: {fileID: 21300000, guid: 23222c3d80d256948854793a6aa694df, type: 3}
   itemHeld: 1
   itemInfo: 
   equip: 0
+  isword: 0

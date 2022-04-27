@@ -16,7 +16,7 @@ public class change1 : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.I))
+        if (GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "kinfe")//¹È
         {
 
             grow.SetActive(false);

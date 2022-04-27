@@ -7,6 +7,7 @@ public class change : MonoBehaviour
     public GameObject miss;
    // public GameObject obj;
     public GameObject grow;
+    public GameObject find;
    // bool judge = true;
     // Start is called before the first frame update
     void Start()
@@ -18,8 +19,7 @@ public class change : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        //GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "Corn"
-        if (Input.GetKeyDown(KeyCode.U))
+        if (GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "autum")//Çï
         {
             miss.SetActive(false);
             grow.SetActive(true);
