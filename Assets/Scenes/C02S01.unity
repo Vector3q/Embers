@@ -84987,6 +84987,7 @@ GameObject:
   - component: {fileID: 464793833}
   - component: {fileID: 464793836}
   - component: {fileID: 464793835}
+  - component: {fileID: 464793837}
   m_Layer: 0
   m_Name: Tiger0
   m_TagString: Enemy
@@ -85054,8 +85055,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 464793832}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -2.16, y: 0.43, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalPosition: {x: -4.7998, y: -2.1538, z: 0}
+  m_LocalScale: {x: 0.5098921, y: 0.5098921, z: 0.5098921}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -85101,6 +85102,26 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 5.023797, y: 3.9948082}
   m_EdgeRadius: 0
+--- !u!95 &464793837
+Animator:
+  serializedVersion: 4
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 464793832}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: bfc9f9a8a2666934991b4a79f07e306f, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!1001 &544290731
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -85182,7 +85203,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.5464
+      value: -0.48
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.z
