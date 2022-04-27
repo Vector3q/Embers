@@ -8,6 +8,9 @@ public class ItemOnWorld : MonoBehaviour
     public Inventory playerInventory;
     public Inventory wordList;
 
+    public GameObject prompt;//按E拾取
+    public GameObject pickobject;//要拾取的物体
+
     private void Start()
     {
         
@@ -20,8 +23,20 @@ public class ItemOnWorld : MonoBehaviour
     { 
         if (collision.gameObject.CompareTag("Player"))
         {
-            AddNewItem();
-            Destroy(gameObject);
+            Show(prompt);
+            if (Input.GetKeyDown(KeyCode.E))
+            {
+                AddNewItem();
+                Destroy(gameObject);
+            }
+        }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        if(collision.gameObject.CompareTag("Player"))
+        {
+            Hide(prompt);
         }
     }
 
@@ -54,5 +69,14 @@ public class ItemOnWorld : MonoBehaviour
         }
 
         InventroyManager.RefreshItem(); 
+    }
+
+    public void Show(GameObject prompt)
+    {
+        prompt.SetActive(true);
+    }
+    public void Hide(GameObject prompt)
+    {
+        prompt.SetActive(false);
     }
 }
