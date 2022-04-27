@@ -19,7 +19,7 @@ public class change : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "autumn")//Çï
+        if (GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "autum")//Çï
         {
             miss.SetActive(false);
             grow.SetActive(true);

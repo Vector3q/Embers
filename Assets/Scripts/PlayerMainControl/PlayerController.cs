@@ -153,6 +153,5 @@ public class PlayerController : MonoBehaviour
     {
         if(!isSpecial(Selected_Equipment) && !DetectSpecial.Detected)//所选物品不是特殊物体并且合成界面未打开
             Equipment_weapon = Selected_Equipment;
-        Debug.Log(Selected_Equipment);
     }
 }
