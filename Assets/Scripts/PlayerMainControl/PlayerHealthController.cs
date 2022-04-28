@@ -26,9 +26,10 @@ public class PlayerHealthController : MonoBehaviour
     //角色受到伤害的时候调用的函数
     public void HeartPlayer(int damage)
     {
-        health-=damage;
+        health = Mathf.Clamp(health - damage, 0, maxhealth);
         PlayerBlinks(numBlinks, BlinksTime);
-        if(health<=0)
+        UIHealthBar.instance.SetValue(health / (float)maxhealth);
+        if (health==0)
         {
             Destroy(gameObject);
         }
@@ -43,7 +44,7 @@ public class PlayerHealthController : MonoBehaviour
     //闪烁的携程
     IEnumerator DoBlinks(int numBlinks,float seconds)
     {
-        //变红一次，回来一次，算是一次闪烁
+        //透明一次，回来一次，算是一次闪烁
         for (int i = 0; i < numBlinks * 2; i++)
         {
             myRenderer .enabled = !myRenderer .enabled;
@@ -55,8 +56,7 @@ public class PlayerHealthController : MonoBehaviour
     public void ChangeHealth(int amount)
     {
 
-       health = Mathf.Clamp(health + amount, 0, maxhealth);
-        UIHealthBar.instance.SetValue(health / (float)maxhealth);
+      
     }
 
 }

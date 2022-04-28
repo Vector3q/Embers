@@ -85244,10 +85244,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   maxhealth: 100
   health: 40
-  Attackdamage: 4
+  Attackdamage: 2
   flashTime: 0.2
   Speed: 2
   AttackCD: 5
+  KnockedBackDistance: {x: 0, y: 0}
 --- !u!61 &464793836
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -85328,7 +85329,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2109817474285359305, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: health
-      value: 1000
+      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 2109817474285359305, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: numBlinks
