@@ -6,7 +6,7 @@ public class FollowPlayer : MonoBehaviour
 {
     public GameObject player;
  
-
+    
     // Update is called once per frame
     void Update()
     {

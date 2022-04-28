@@ -78,7 +78,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 56ffe05057645f849893205ef0ce3940, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -172,7 +172,7 @@ MonoBehaviour:
   speed: 0
   bag: {fileID: 0}
   Equipment_weapon: {fileID: 0}
-  animator: {fileID: 0}
+  animator: {fileID: 1300273177521667172}
 --- !u!114 &2109817474285359305
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -187,6 +187,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   health: 10
   maxhealth: 10
+  numBlinks: 3
+  BlinksTime: 0.2
 --- !u!1 &2594710284684350390
 GameObject:
   m_ObjectHideFlags: 0
@@ -267,6 +269,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c3e01feb3b0a4c42afdcc0bf582b1ad, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SwordDamage: 0
+  SwordDamage: 2
   EndWaitTime: 0
   StartAttackTime: 0

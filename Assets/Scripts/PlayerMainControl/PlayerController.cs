@@ -6,7 +6,10 @@ using UnityEngine.UI;
 [RequireComponent(typeof(Rigidbody2D))]
 public class PlayerController : MonoBehaviour
 {
+    public static PlayerController instance;//单例模式可以让这个脚本中任何public变量，在其他脚本中都可以直接调用
 
+    public string password;//判断我们player的密码是否和场景的密码一样，是的话转换
+    //即场景A的exit脚本变量：密码和场景B的Entrence脚本变量：密码一样,角色进入场景B并出现在正确的位置
     //速度
     public float speed;
     //背包
@@ -38,6 +41,21 @@ public class PlayerController : MonoBehaviour
     float ScaleY;  
     float ScaleZ;
 
+    private void Awake()
+    {
+        if(instance == null)
+        {
+            instance = this;
+        }
+        else//如果这个场景已经存在一个PlayerController脚本了
+        {
+            if(instance!=this)
+            {
+                Destroy(gameObject);//保证游戏中永远只有一个playercontroller脚本
+            }
+            DontDestroyOnLoad(gameObject);//保证在场景转换中该脚本存在于任何场景中，不会因为加载新的场景就消失不见
+        }
+    }
     void Start()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();

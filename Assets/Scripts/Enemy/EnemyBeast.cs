@@ -12,6 +12,8 @@ public class EnemyBeast : Enemy
     public float AttackCD;
     Rigidbody2D mrigidbody2D;
 
+    public Vector2 KnockedBackDistance;
+
     //是否僵直
     bool isStill;
 
@@ -90,8 +92,8 @@ public class EnemyBeast : Enemy
         //方向归一化
         KnockedBackDirection.Normalize();
         //击退位置计算
-        KnockedBackPosition.x = transform.position.x + KnockedBackDirection.x * Speed * Time.deltaTime * 50;
-        KnockedBackPosition.y = transform.position.y + KnockedBackDirection.y * Speed * Time.deltaTime * 50;
+        KnockedBackPosition.x = transform.position.x + KnockedBackDirection.x * KnockedBackDistance.x;
+        KnockedBackPosition.y = transform.position.y + KnockedBackDirection.y * KnockedBackDistance.y;
         /*        Debug.Log(KnockedBackPosition.x);
                 Debug.Log(KnockedBackPosition.y);*/
         transform.position = KnockedBackPosition;
