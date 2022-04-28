@@ -20,6 +20,10 @@ public class PlayerController : MonoBehaviour
     static public Item Selected_Equipment;
     //合成界面
     public Plane synthesisPlane;
+    //是否可以交互
+    public bool interactive;
+    //是否正在交互
+    public bool isInteracting;
     //背包是否打开
     bool isOpen;
     //动画管理器

@@ -89,7 +89,7 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
-  m_SpriteSortPoint: 0
+  m_SpriteSortPoint: 1
 --- !u!50 &7939599268938551111
 Rigidbody2D:
   serializedVersion: 4
@@ -169,6 +169,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3394290ccb8c07742ab43544d9cbc360, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  password: 
   speed: 0
   bag: {fileID: 0}
   Equipment_weapon: {fileID: 0}

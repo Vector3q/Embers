@@ -10,11 +10,13 @@ public class PlayerHealthController : MonoBehaviour
     public float BlinksTime;
 
     private Renderer myRenderer;
+    private Animator anim;
 
     // Start is called before the first frame update
     void Start()
     {
         myRenderer = GetComponent<Renderer>();
+        anim = GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -31,7 +33,9 @@ public class PlayerHealthController : MonoBehaviour
         UIHealthBar.instance.SetValue(health / (float)maxhealth);
         if (health==0)
         {
-            Destroy(gameObject);
+            anim.SetTrigger("Dead");
+            //一秒之后再摧毁玩家对象
+            Destroy(gameObject,2.0f);
         }
     }
 
