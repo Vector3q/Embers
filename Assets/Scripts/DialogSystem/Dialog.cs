@@ -21,6 +21,8 @@ public class Dialog : MonoBehaviour
     bool textFinished;//是否完成打字
     bool cancelTyping;//取消打字
 
+    static public bool isOver;
+
     List<string> textList = new List<string>();//创建一个列表存储字符
 
     void Awake()
@@ -44,6 +46,7 @@ public class Dialog : MonoBehaviour
             gameObject.SetActive(false);//直接将文本框关闭
             if(gameObject!=null)
             index = 0;//序列归零
+            isOver = true;
             return;
         }
         if(Input.GetKeyDown(KeyCode.Escape))
@@ -60,7 +63,7 @@ public class Dialog : MonoBehaviour
        //     //index++;
        //     StartCoroutine(SetTextUI());
        // }
-       if(Input.GetKeyDown(KeyCode.R))
+       if(Input.GetKeyDown(KeyCode.R) || Input.GetKeyDown(KeyCode.Mouse0))
         {
             if(textFinished&&!cancelTyping)
             {

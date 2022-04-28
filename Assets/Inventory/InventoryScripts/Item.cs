@@ -11,6 +11,6 @@ public class Item : ScriptableObject
     [TextArea]
     public string itemInfo;
 
-    public bool equip;
+    public bool isInteraction;
     public bool isword;
 }

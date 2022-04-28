@@ -16,5 +16,5 @@ MonoBehaviour:
   itemImage: {fileID: 21300000, guid: 4f13032fb3816a14a85c02f79d8fcb2c, type: 3}
   itemHeld: 0
   itemInfo: fire
-  equip: 0
+  isInteraction: 1
   isword: 1

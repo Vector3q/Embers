@@ -1,26 +1,29 @@
-using System.Collections;
-using System.Collections.Generic;
 using UnityEngine;
 
 public class Getbutton : MonoBehaviour
 {
-    public GameObject Button;
+    public GameObject Button_R;
+    public GameObject Button_E_OR_I;
     public GameObject talkUI;
     private void OnTriggerEnter2D(Collider2D other)
     {
-        Button.SetActive(true);
+        Button_R.SetActive(true);
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Button.SetActive(false);
+        Button_R.SetActive(false);
     }
 
     private void Update()
     {
-        if (Button.activeSelf && Input.GetKeyDown(KeyCode.R))
+        if (Button_R.activeSelf && Input.GetKeyDown(KeyCode.R))
         {
             talkUI.SetActive(true);
+        }
+        if(Dialog.isOver)
+        {
+            Button_E_OR_I.SetActive(true);
         }
     }
 }

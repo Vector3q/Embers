@@ -22,7 +22,7 @@ public class ItemOnWorld : MonoBehaviour
     { 
         if (collision.gameObject.CompareTag("Player"))
         {
-            Show(prompt);
+            //Show(prompt);
             
         }
     }
@@ -31,10 +31,21 @@ public class ItemOnWorld : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            if (Input.GetKey(KeyCode.E))
+
+            if (!thisItem.isInteraction)
             {
-                AddNewItem();
-                Destroy(gameObject);
+                if (Input.GetKey(KeyCode.E))
+                {
+                    AddNewItem();
+                    Destroy(gameObject);
+                }
+            }
+            else if (thisItem.isInteraction)
+            {
+                if (Input.GetKey(KeyCode.I))
+                {
+                    AddNewItem();
+                }
             }
         }
     }
