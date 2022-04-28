@@ -13,6 +13,7 @@ public class Getbutton : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         Button_R.SetActive(false);
+        Button_E_OR_I.SetActive(false);
     }
 
     private void Update()
