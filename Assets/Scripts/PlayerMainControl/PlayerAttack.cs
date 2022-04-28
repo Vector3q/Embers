@@ -18,6 +18,8 @@ public class PlayerAttack : MonoBehaviour
     {
         anim=GameObject.Find("Player").GetComponent<Animator>();
         mcollider2D=GetComponent<PolygonCollider2D>();
+        EndWaitTime = 0.15f;
+        StartAttackTime = 0.3f;
     }
 
     // Update is called once per frame
