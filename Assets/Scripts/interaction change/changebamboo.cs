@@ -15,16 +15,20 @@ public class changebamboo : MonoBehaviour
 
     }
 
-
-    // Update is called once per frame
-    void Update()
+    void bamboo1()
     {
-        //GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName == "Corn"
-        if (Input.GetKeyDown(KeyCode.B))
+        string nameb = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
+        if (nameb == "knife" && Input.GetKeyDown(KeyCode.I))
         {
+
             miss.SetActive(false);
             grow.SetActive(true);
-
+            Debug.Log("ok");
         }
+    }
+// Update is called once per frame
+void Update()
+    {
+        bamboo1();
     }
 }

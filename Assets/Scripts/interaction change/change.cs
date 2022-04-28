@@ -21,7 +21,7 @@ public class change : MonoBehaviour
     {
        
             string namea = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
-        if (namea == "autum")
+        if (namea == "autumn"&&Input .GetKeyDown(KeyCode.I))
         {
             miss.SetActive(false);
             grow.SetActive(true);

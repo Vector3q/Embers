@@ -13,7 +13,7 @@ public class change2 : MonoBehaviour
     void Plant()
     {
         string namep = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
-        if (namep == "plant")//ÖÖ
+        if (namep == "seed"&&Input.GetKeyDown(KeyCode.I))//ÖÖ
             wuti.SetActive(true);
     }
     // Update is called once per frame

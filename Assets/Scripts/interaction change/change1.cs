@@ -15,7 +15,7 @@ public class change1 : MonoBehaviour
     void Knife()
     {
         string namek = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
-        if (namek=="kinfe")//¹È
+        if (namek=="kinfe"&& Input.GetKeyDown(KeyCode.I))//¹È
         {
 
             grow.SetActive(false);
