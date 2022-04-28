@@ -916,7 +916,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 190722064}
   grow: {fileID: 461215561}
-  find: {fileID: 0}
 --- !u!61 &190722067
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1190,7 +1189,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 269029826}
   grow: {fileID: 7510520627336390369}
-  find: {fileID: 0}
 --- !u!61 &269029829
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -1325,7 +1323,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 300698873}
   grow: {fileID: 1286992149}
-  find: {fileID: 0}
 --- !u!61 &300698876
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -2816,7 +2813,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 561491610}
   grow: {fileID: 1033746851}
-  find: {fileID: 0}
 --- !u!61 &561491613
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -3329,19 +3325,19 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalScale.x
-      value: 6.1112337
+      value: 5.717059
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalScale.y
-      value: 5.92412
+      value: 5.7072973
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -8.8193
+      value: -9.3493
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 23.7749
+      value: 24.0777
       objectReference: {fileID: 0}
     - target: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_LocalPosition.z
@@ -4153,7 +4149,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 964708646}
   grow: {fileID: 1113172763}
-  find: {fileID: 0}
 --- !u!61 &964708649
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74071,7 +74066,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 1530316743}
   grow: {fileID: 896149734}
-  find: {fileID: 0}
 --- !u!61 &1530316746
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74286,7 +74280,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 1612265275}
   grow: {fileID: 485161644}
-  find: {fileID: 0}
 --- !u!61 &1612265278
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74418,7 +74411,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 1619676377}
   grow: {fileID: 724453989}
-  find: {fileID: 0}
 --- !u!61 &1619676380
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -74594,7 +74586,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   miss: {fileID: 1715198959}
   grow: {fileID: 2134158671}
-  find: {fileID: 0}
 --- !u!61 &1715198962
 BoxCollider2D:
   m_ObjectHideFlags: 0
