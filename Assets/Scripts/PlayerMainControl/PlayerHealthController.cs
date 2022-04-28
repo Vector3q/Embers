@@ -51,4 +51,12 @@ public class PlayerHealthController : MonoBehaviour
         }
         myRenderer.enabled = true;
     }
+
+    public void ChangeHealth(int amount)
+    {
+
+       health = Mathf.Clamp(health + amount, 0, maxhealth);
+        UIHealthBar.instance.SetValue(health / (float)maxhealth);
+    }
+
 }
