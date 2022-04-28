@@ -53,10 +53,5 @@ public class PlayerHealthController : MonoBehaviour
         myRenderer.enabled = true;
     }
 
-    public void ChangeHealth(int amount)
-    {
-
-      
-    }
 
 }
