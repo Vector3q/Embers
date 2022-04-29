@@ -28,6 +28,7 @@ public class changebamboo : MonoBehaviour
 // Update is called once per frame
 void Update()
     {
-        bamboo1();
+        if(change1.isChange)
+            bamboo1();
     }
 }

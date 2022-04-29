@@ -170,7 +170,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   password: 
-  speed: 20
+  speed: 30
   bag: {fileID: 0}
   Equipment_weapon: {fileID: 0}
   interactive: 0
