@@ -70,14 +70,20 @@ public class PlayerController : MonoBehaviour
         ScaleX = transform.localScale.x;
         ScaleY = transform.localScale.y;
         ScaleZ = transform.localScale.z;
+
+        interactive = false;
+        isInteracting = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        FlipX();
-        Move();
-        OpenMyBag();
+        if (!isInteracting)
+        {
+            FlipX();
+            Move();
+        }
+            OpenMyBag();
     }
 
 
@@ -138,6 +144,14 @@ public class PlayerController : MonoBehaviour
 
         }
     }
+
+    public void SitDown()
+    {
+            //设置动画
+            animator.SetBool("SittingDown", true);
+            isInteracting = true;
+    }
+
 
     /// <summary>
     /// M键打开关闭背包
