@@ -18,6 +18,8 @@ public class Dialog : MonoBehaviour
     [Header("头像")]
     public Sprite face01, face02;
 
+    private PlayerController playerController;
+    
     bool textFinished;//是否完成打字
     bool cancelTyping;//取消打字
 
@@ -25,13 +27,15 @@ public class Dialog : MonoBehaviour
 
     List<string> textList = new List<string>();//创建一个列表存储字符
 
-    void Awake()
+    public void Awake()
     {
         GetTextFromFile(textFile);
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
     }
 
-    private void OnEnable()//一开始对话的时候会显示第一句话
+    public void OnEnable()//一开始对话的时候会显示第一句话
     {
+        playerController.isInteracting = true;
         //textLabel.text = textList[index];
         //index++;
         textFinished = true;
@@ -39,7 +43,7 @@ public class Dialog : MonoBehaviour
     }
 
     // Update is called once per frame
-    void Update()
+    public void Update()
     {
         if(Input.GetKeyDown(KeyCode.R)&&index ==textList.Count)//代表文本结束了
         {

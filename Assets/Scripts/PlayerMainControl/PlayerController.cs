@@ -82,8 +82,8 @@ public class PlayerController : MonoBehaviour
         {
             FlipX();
             Move();
-        }
             OpenMyBag();
+        }
     }
 
 
