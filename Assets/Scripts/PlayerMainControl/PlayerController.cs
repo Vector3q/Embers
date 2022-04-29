@@ -213,7 +213,7 @@ public class PlayerController : MonoBehaviour
                 equipedKnifee = false;
                 equipedFire = true;
                 break;
-            case "knife":
+            case "sword":
                 equiped = true;
                 equipedKnifee = true;
                 equipedFire = false;
