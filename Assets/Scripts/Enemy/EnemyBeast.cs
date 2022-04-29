@@ -12,7 +12,14 @@ public class EnemyBeast : Enemy
     public float AttackCD;
     Rigidbody2D mrigidbody2D;
 
+    public Animator tigeranimator;
+   
     public Vector2 KnockedBackDistance;
+   
+    //原本老虎的Scale信息
+    float ScaleX;
+    float ScaleY;
+    float ScaleZ;
 
     //是否僵直
     bool isStill;
@@ -27,6 +34,13 @@ public class EnemyBeast : Enemy
     // Start is called before the first frame update
     public void Start()
     {
+        //获取老虎原本的scale信息
+        ScaleX = transform.localScale.x;
+        ScaleY = transform.localScale.y;
+        ScaleZ = transform.localScale.z;
+        
+        tigeranimator = GetComponent<Animator>();
+       
         base.Start();
         mrigidbody2D = GetComponent<Rigidbody2D>();
 /*        StartCoroutine(Wake());*/
@@ -57,10 +71,23 @@ public class EnemyBeast : Enemy
 
     void MoveToPlayer()
     {
+        //向玩家移动时打开老虎跑动的动画
+        tigeranimator.SetBool("Iswalk", true);
+        
         Vector2 MoveDirection;
         //获取运动的方向
         MoveDirection.x=moveTarget.x-transform.position.x;
         MoveDirection.y=moveTarget.y-transform.position.y;
+        if (MoveDirection.x > 0.01f)
+        {
+            //默认是左边
+            transform.localScale = new Vector3(ScaleX, ScaleY, ScaleZ);
+        }
+        if (MoveDirection.x < -0.01f)
+        {
+            transform.localScale = new Vector3(-ScaleX, ScaleY, ScaleZ);
+        }
+
         //运动向量归一化
         MoveDirection.Normalize();
 
