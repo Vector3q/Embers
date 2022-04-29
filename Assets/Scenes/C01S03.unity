@@ -2078,7 +2078,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 2.0206783, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
@@ -11605,7 +11605,6 @@ GameObject:
   m_Component:
   - component: {fileID: 861012032}
   - component: {fileID: 861012031}
-  - component: {fileID: 861012033}
   - component: {fileID: 861012034}
   m_Layer: 0
   m_Name: "\u7AF9\u5B503.0\u65E0\u5BF9\u8BDD"
@@ -11682,21 +11681,6 @@ Transform:
   m_Father: {fileID: 76367009}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &861012033
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 861012030}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9d65a18f6999c45be671ee91cbfc71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Button_R: {fileID: 0}
-  Button_E_OR_I: {fileID: 0}
-  talkUI: {fileID: 52088452}
 --- !u!61 &861012034
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -12465,7 +12449,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1006664610}
   - component: {fileID: 1006664609}
-  - component: {fileID: 1006664608}
   - component: {fileID: 1006664607}
   - component: {fileID: 1006664611}
   m_Layer: 0
@@ -12501,21 +12484,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 3.2, y: 3.2}
   m_EdgeRadius: 0
---- !u!114 &1006664608
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1006664606}
-  m_Enabled: 0
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0f9d65a18f6999c45be671ee91cbfc71, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Button_R: {fileID: 0}
-  Button_E_OR_I: {fileID: 0}
-  talkUI: {fileID: 52088452}
 --- !u!212 &1006664609
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -23070,7 +23038,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 2.0638, y: -98.26999}
+  m_AnchoredPosition: {x: 2.0638123, y: -98.26999}
   m_SizeDelta: {x: -207.21, y: -360.41}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1383223665
