@@ -523,8 +523,8 @@ Transform:
   - {fileID: 1490909847}
   - {fileID: 1443421268}
   - {fileID: 156515605}
-  - {fileID: 122007641}
   - {fileID: 1155481905}
+  - {fileID: 122007641}
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -11278,7 +11278,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049897019033487955, guid: 101946cd576415244bd1fc76ffc8ea43, type: 3}
       propertyPath: m_Text
-      value: "\u83B7\u5F97\u65B0\u6587\u5B57\uFF1A\u5F13"
+      value: "\u83B7\u5F97\u65B0\u7269\u4F53\uFF1A\u5F13"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 101946cd576415244bd1fc76ffc8ea43, type: 3}
@@ -82724,6 +82724,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 9191575880006328601, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
+      propertyPath: Tips_Autumn
+      value: 
+      objectReference: {fileID: 2030324402}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
 --- !u!114 &1634901849 stripped
@@ -83631,7 +83635,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 9049897019033487955, guid: 101946cd576415244bd1fc76ffc8ea43, type: 3}
       propertyPath: m_Text
-      value: "\u83B7\u5F97\u65B0\u6587\u5B57\uFF1A\u5200"
+      value: "\u83B7\u5F97\u65B0\u7269\u4F53\uFF1A\u5200"
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 101946cd576415244bd1fc76ffc8ea43, type: 3}
@@ -83942,6 +83946,11 @@ PrefabInstance:
 --- !u!224 &2030324401 stripped
 RectTransform:
   m_CorrespondingSourceObject: {fileID: 9049897019033487954, guid: 101946cd576415244bd1fc76ffc8ea43, type: 3}
+  m_PrefabInstance: {fileID: 2030324400}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1 &2030324402 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9049897019033487953, guid: 101946cd576415244bd1fc76ffc8ea43, type: 3}
   m_PrefabInstance: {fileID: 2030324400}
   m_PrefabAsset: {fileID: 0}
 --- !u!4 &2035767167 stripped
