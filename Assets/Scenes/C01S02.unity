@@ -26208,7 +26208,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5361420782236150760, guid: f457659567db18641830b7f7716b4e55, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: 276.66666
+      value: 654
       objectReference: {fileID: 0}
     - target: {fileID: 5361420782236150760, guid: f457659567db18641830b7f7716b4e55, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -39804,7 +39804,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7403846, y: 1}
+    m_SensorSize: {x: 2.0206783, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

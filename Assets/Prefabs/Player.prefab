@@ -170,9 +170,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   password: 
-  speed: 0
+  speed: 20
   bag: {fileID: 0}
   Equipment_weapon: {fileID: 0}
+  interactive: 0
+  isInteracting: 0
+  equiped: 0
+  equipedKnifee: 0
+  equipedFire: 0
   animator: {fileID: 1300273177521667172}
 --- !u!114 &2109817474285359305
 MonoBehaviour:
