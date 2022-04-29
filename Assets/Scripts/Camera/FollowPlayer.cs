@@ -15,7 +15,7 @@ public class FollowPlayer : MonoBehaviour
     public Inventory playerInventory;
 
     const float THERESOLD = 100;
-    const float MINTHERESOLD = 20;
+    const float MINTHERESOLD = 10;
 
     private void Start()
     {
