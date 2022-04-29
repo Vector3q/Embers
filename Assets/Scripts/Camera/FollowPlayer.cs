@@ -15,6 +15,7 @@ public class FollowPlayer : MonoBehaviour
     public Inventory playerInventory;
 
     const float THERESOLD = 100;
+    const float MINTHERESOLD = 20;
 
     private void Start()
     {
@@ -37,14 +38,15 @@ public class FollowPlayer : MonoBehaviour
             if(Input.GetAxis("Mouse ScrollWheel") != 0)
             {
                 Debug.Log(Input.GetAxis("Mouse ScrollWheel"));
-                if (light.range < THERESOLD)
+                if (light.range <= THERESOLD && light.range>=MINTHERESOLD)
                 {
                     // 小于阈值时加亮度
-                    sumLight += Input.GetAxis("Mouse ScrollWheel") * 20;
-                    light.range = LightRange + sumLight;
+                    sumLight += Input.GetAxis("Mouse ScrollWheel") * 100;
+                    if(LightRange+sumLight <= THERESOLD && LightRange+sumLight >= MINTHERESOLD)
+                        light.range = LightRange + sumLight;
 
                 }
-                else if(light.range == THERESOLD)
+                if(light.range == THERESOLD)
                 {
                     //等于阈值时获得炬字
                     if(!wordList.isObtainItem(word_Torch))

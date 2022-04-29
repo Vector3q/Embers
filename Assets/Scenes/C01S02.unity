@@ -25463,7 +25463,7 @@ Light:
   m_Shape: 0
   m_Color: {r: 1, g: 0.85639083, b: 0.76792455, a: 1}
   m_Intensity: 2
-  m_Range: 10
+  m_Range: 20
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -25600,19 +25600,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_Size.x
-      value: 0.4568654
+      value: 0.28325638
       objectReference: {fileID: 0}
     - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_Size.y
-      value: 0.6846353
+      value: 0.32751867
       objectReference: {fileID: 0}
     - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_Offset.x
-      value: -0.048897967
+      value: -0.043791786
       objectReference: {fileID: 0}
     - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_Offset.y
-      value: 0.0082356185
+      value: -0.17032267
+      objectReference: {fileID: 0}
+    - target: {fileID: 3818456088995089875, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: m_IsTrigger
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8400030147562771927, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
       propertyPath: m_SortingOrder
@@ -25708,12 +25712,23 @@ CapsuleCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
   m_Offset: {x: -0.0473572, y: 0.010195065}
   m_Size: {x: 0.42740023, y: 0.6603902}
   m_Direction: 0
+--- !u!114 &689411073 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8766229588429321484, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+  m_PrefabInstance: {fileID: 689411062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689411063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3394290ccb8c07742ab43544d9cbc360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &699631579
 GameObject:
   m_ObjectHideFlags: 0
@@ -32834,7 +32849,7 @@ PrefabInstance:
     - target: {fileID: 4043890540053654504, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 689411073}
     - target: {fileID: 4043890540053654504, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EquipmentReplace
@@ -39298,7 +39313,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 2.0206783, y: 1}
+    m_SensorSize: {x: 1.7403846, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
