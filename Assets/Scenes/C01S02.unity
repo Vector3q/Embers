@@ -25707,6 +25707,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 8726532841531173670, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
   m_PrefabInstance: {fileID: 689411062}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &689411065 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 8766229588429321484, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+  m_PrefabInstance: {fileID: 689411062}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 689411063}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3394290ccb8c07742ab43544d9cbc360, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!70 &689411071
 CapsuleCollider2D:
   m_ObjectHideFlags: 0
@@ -33057,7 +33068,7 @@ PrefabInstance:
     - target: {fileID: 4043890540053654504, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 689411065}
     - target: {fileID: 4043890540053654504, guid: f2be324dc20fd5646838c0a3ed4b5984, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: EquipmentReplace
@@ -39526,7 +39537,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.6554219, y: 1}
+    m_SensorSize: {x: 1.7403846, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
