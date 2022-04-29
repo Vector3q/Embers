@@ -14,17 +14,19 @@ public class EnemyBeast : Enemy
 
     public Animator tigeranimator;
    
-    public Vector2 KnockedBackDistance;
-   
+    public float KnockedBackDistance;
+
+    //侦测半径
+    public float detectRadius;
+
     //原本老虎的Scale信息
     float ScaleX;
     float ScaleY;
     float ScaleZ;
 
-    //是否僵直
-    bool isStill;
+    private bool IsPlayerDetected;
 
-    //老虎的移动目标坐标:玩家
+    //老虎的移动目标坐标:玩家,或者直接理解为玩家的坐标
     Vector2 moveTarget;
     //老虎的位置
     Vector2 position;
@@ -38,7 +40,10 @@ public class EnemyBeast : Enemy
         ScaleX = transform.localScale.x;
         ScaleY = transform.localScale.y;
         ScaleZ = transform.localScale.z;
-        
+
+        //最开始的时候player不会被检测到
+        IsPlayerDetected = false;
+
         tigeranimator = GetComponent<Animator>();
        
         base.Start();
@@ -58,7 +63,14 @@ public class EnemyBeast : Enemy
             //获取玩家的位置
             GetPlayerPosition();
             //向玩家移动
-            MoveToPlayer();
+            if (IsPlayerDetected)
+            {
+                MoveToPlayer();
+            }
+            else
+            {
+                DetectPlayer();
+            }
         }
         
     }
@@ -119,11 +131,29 @@ public class EnemyBeast : Enemy
         //方向归一化
         KnockedBackDirection.Normalize();
         //击退位置计算
-        KnockedBackPosition.x = transform.position.x + KnockedBackDirection.x * KnockedBackDistance.x;
-        KnockedBackPosition.y = transform.position.y + KnockedBackDirection.y * KnockedBackDistance.y;
+        KnockedBackPosition.x = transform.position.x + KnockedBackDirection.x * KnockedBackDistance;
+        KnockedBackPosition.y = transform.position.y + KnockedBackDirection.y * KnockedBackDistance;
         /*        Debug.Log(KnockedBackPosition.x);
                 Debug.Log(KnockedBackPosition.y);*/
         transform.position = KnockedBackPosition;
         /*mrigidbody2D.MovePosition(KnockedBackPosition);*/
+    }
+
+    //一定范围之内检测玩家
+    void DetectPlayer()
+    {
+        //玩家和老虎的距离向量
+        Vector2 distance;
+        //获取玩家的位置
+        GetPlayerPosition();
+        //计算距离
+        distance.x = transform.position.x - moveTarget.x;
+        distance.y = transform.position.y -moveTarget.y;
+        //距离检测,小于侦测最大范围就设置值
+        if (distance.magnitude < detectRadius)
+        {
+            IsPlayerDetected = true;
+        }
+
     }
 }
