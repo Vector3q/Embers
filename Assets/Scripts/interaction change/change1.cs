@@ -7,6 +7,7 @@ public class change1 : MonoBehaviour
     
     public GameObject obj;
     public GameObject grow;
+    
     // Start is called before the first frame update
     void Start()
     {
@@ -15,9 +16,9 @@ public class change1 : MonoBehaviour
     void Knife()
     {
         string namek = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
-        if (namek=="kinfe"&& Input.GetKeyDown(KeyCode.I))//¹È
+        if (namek=="sword"&& Input.GetKeyDown(KeyCode.I))//¹È
         {
-
+          
             grow.SetActive(false);
             obj.SetActive(true);
             Debug.Log("ok");

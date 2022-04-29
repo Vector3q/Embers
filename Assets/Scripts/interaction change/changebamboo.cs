@@ -18,9 +18,8 @@ public class changebamboo : MonoBehaviour
     void bamboo1()
     {
         string nameb = GameObject.Find("Player").GetComponent<PlayerController>().Equipment_weapon.itemName;
-        if (nameb == "knife" && Input.GetKeyDown(KeyCode.I))
+        if (nameb == "sword" && Input.GetKeyDown(KeyCode.I))
         {
-
             miss.SetActive(false);
             grow.SetActive(true);
             Debug.Log("ok");

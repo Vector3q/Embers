@@ -7,7 +7,7 @@ public class ItemOnWorld : MonoBehaviour
     public Item thisItem;
     public Inventory playerInventory;
     public Inventory wordList;
-
+    public GameObject Tips;
     public GameObject prompt;//°´EÊ°È¡
 
     private void Start()
@@ -31,13 +31,13 @@ public class ItemOnWorld : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-
             if (!thisItem.isInteraction)
             {
                 if (Input.GetKey(KeyCode.E))
                 {
                     AddNewItem();
                     Destroy(gameObject);
+                    Tips.SetActive(true);
                 }
             }
             else if (thisItem.isInteraction)
@@ -45,6 +45,7 @@ public class ItemOnWorld : MonoBehaviour
                 if (Input.GetKey(KeyCode.I))
                 {
                     AddNewItem();
+                    Tips.SetActive(true);
                 }
             }
         }
