@@ -25563,8 +25563,8 @@ Light:
   m_Type: 2
   m_Shape: 0
   m_Color: {r: 1, g: 0.85639083, b: 0.76792455, a: 1}
-  m_Intensity: 1.81
-  m_Range: 8.37
+  m_Intensity: 2
+  m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
   m_CookieSize: 10
@@ -25626,6 +25626,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   player: {fileID: 689411063}
+  light: {fileID: 0}
+  word_Torch: {fileID: 11400000, guid: 7b0e4f45cae43a245869537533d3c4df, type: 2}
+  wordList: {fileID: 11400000, guid: 24dc1a8706f449f47ac7c3a796c6ddad, type: 2}
 --- !u!1 &686785364
 GameObject:
   m_ObjectHideFlags: 0
@@ -25775,6 +25778,10 @@ PrefabInstance:
       propertyPath: speed
       value: 36
       objectReference: {fileID: 0}
+    - target: {fileID: 8766229588429321484, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
+      propertyPath: Equipment_weapon
+      value: 
+      objectReference: {fileID: 11400000, guid: b34fbafa67a65074d98510f02f9b8eb3, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 7c49fca6b8d04684794afa9c687693f3, type: 3}
 --- !u!1 &689411063 stripped
@@ -39484,7 +39491,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7774295, y: 1}
+    m_SensorSize: {x: 1.7403846, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0

@@ -10,11 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f158056e44168b44eab11f0e1cb1a140, type: 3}
-  m_Name: word_ju
+  m_Name: word_torch
   m_EditorClassIdentifier: 
-  itemName: ju
+  itemName: torch
   itemImage: {fileID: 21300000, guid: 28a1503e8269251458db8d083a967b1a, type: 3}
   itemHeld: 0
   itemInfo: 
-  equip: 0
+  isInteraction: 0
   isword: 0
