@@ -14,6 +14,7 @@ GameObject:
   - component: {fileID: 3731326249401002834}
   - component: {fileID: 3731326249401002833}
   - component: {fileID: 3731326249401002832}
+  - component: {fileID: 5365527306707454412}
   m_Layer: 0
   m_Name: Tigger
   m_TagString: Enemy
@@ -176,3 +177,19 @@ MonoBehaviour:
   tigeranimator: {fileID: 0}
   KnockedBackDistance: 3
   detectRadius: 4
+--- !u!70 &5365527306707454412
+CapsuleCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3731326249401002839}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: -0.000000063194285, y: -0.53011215}
+  m_Size: {x: 10.150002, y: 8.056304}
+  m_Direction: 1
