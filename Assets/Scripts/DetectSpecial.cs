@@ -26,6 +26,8 @@ public class DetectSpecial : MonoBehaviour
     public Inventory wordList;
     public Inventory playerInventory;
 
+    public GameObject Tips_Autumn;
+
     private void Start()
     {
         whichone = 0;
@@ -71,6 +73,7 @@ public class DetectSpecial : MonoBehaviour
         if(leftImage.sprite == word_seed.itemImage && rightImage.sprite == word_fire.itemImage)
         {
             addword(word_autumn);
+            Tips_Autumn.SetActive(true);
         }
         InventroyManager.RefreshItem();
     }
