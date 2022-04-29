@@ -25629,6 +25629,7 @@ MonoBehaviour:
   light: {fileID: 0}
   word_Torch: {fileID: 11400000, guid: 7b0e4f45cae43a245869537533d3c4df, type: 2}
   wordList: {fileID: 11400000, guid: 24dc1a8706f449f47ac7c3a796c6ddad, type: 2}
+  playerInventory: {fileID: 11400000, guid: 0213ca040fac6fe4099f84fd1c8401ee, type: 2}
 --- !u!1 &686785364
 GameObject:
   m_ObjectHideFlags: 0

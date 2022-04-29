@@ -12,6 +12,7 @@ public class FollowPlayer : MonoBehaviour
     public Item word_Torch;
 
     public Inventory wordList;
+    public Inventory playerInventory;
 
     const float THERESOLD = 100;
 
@@ -46,9 +47,18 @@ public class FollowPlayer : MonoBehaviour
                 else if(light.range == THERESOLD)
                 {
                     //等于阈值时获得炬字
-                    if(!IsObtainTorch())
+                    if(!wordList.isObtainItem(word_Torch))
                     {
-                        //InventroyManager.
+                        wordList.itemList.Add(word_Torch);
+                        for (int i = 0; i < playerInventory.itemList.Count; i++)
+                        {
+                            if (playerInventory.itemList[i] == null)
+                            {
+                                playerInventory.itemList[i] = word_Torch;
+                                break;
+                            }
+                        }
+                        InventroyManager.RefreshItem();
                     }
                 }
             }
