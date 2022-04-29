@@ -13,10 +13,6 @@ public class WordSynthesis : MonoBehaviour
     public Image leftImage;
     public Image rightImage;
     public Image successImage;
-    private void Start()
-    {
-        gameObject.SetActive(false);
-    }
     private void Update()
     {
         if(leftword != null)
