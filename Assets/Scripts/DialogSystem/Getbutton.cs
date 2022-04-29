@@ -25,7 +25,6 @@ public class Getbutton : MonoBehaviour
         }
         if(Dialog.isOver && Button_R.activeSelf==true)
         {
-            Debug.Log(1);
             Button_E_OR_I.SetActive(true);
             //Button_E_OR_I.SetActive(true);   
         }

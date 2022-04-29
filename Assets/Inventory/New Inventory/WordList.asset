@@ -13,7 +13,4 @@ MonoBehaviour:
   m_Name: WordList
   m_EditorClassIdentifier: 
   itemList:
-  - {fileID: 0}
-  - {fileID: 11400000, guid: e292a1d8d5bf83a4584673d075952ad2, type: 2}
-  - {fileID: 11400000, guid: 977ff53ecf7954c419aec0616ed11fff, type: 2}
-  - {fileID: 11400000, guid: 7b0e4f45cae43a245869537533d3c4df, type: 2}
+  - {fileID: 11400000, guid: b34fbafa67a65074d98510f02f9b8eb3, type: 2}
