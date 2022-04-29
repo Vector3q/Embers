@@ -14,6 +14,7 @@ public class Getbutton : MonoBehaviour
     {
         Button_R.SetActive(false);
         Button_E_OR_I.SetActive(false);
+        Dialog.isOver = false;
     }
 
     private void Update()
@@ -22,9 +23,11 @@ public class Getbutton : MonoBehaviour
         {
             talkUI.SetActive(true);
         }
-        if(Dialog.isOver)
+        if(Dialog.isOver && Button_R.activeSelf==true)
         {
+            Debug.Log(1);
             Button_E_OR_I.SetActive(true);
+            //Button_E_OR_I.SetActive(true);   
         }
     }
 }

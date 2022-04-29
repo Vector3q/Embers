@@ -50,7 +50,7 @@ public class Dialog : MonoBehaviour
             gameObject.SetActive(false);//直接将文本框关闭
             if(gameObject!=null)
             index = 0;//序列归零
-            //isOver = true;
+            isOver = true;
             return;
         }
         if(Input.GetKeyDown(KeyCode.Escape))

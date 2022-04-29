@@ -17923,6 +17923,50 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3888412938777175424, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_Enabled
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_Size.x
+      value: 0.94390184
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_Size.y
+      value: 0.99012095
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_Offset.x
+      value: 0.014677733
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.06524429
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_IsTrigger
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_UsedByEffector
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.x
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_SpriteTilingProperty.newSize.y
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.x
+      value: 1.92
+      objectReference: {fileID: 0}
+    - target: {fileID: 6492419379738675847, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
+      propertyPath: m_SpriteTilingProperty.oldSize.y
+      value: 1.92
+      objectReference: {fileID: 0}
     - target: {fileID: 7946533438720109404, guid: 4c6f629cdbfa3624892f262dd9aaec72, type: 3}
       propertyPath: m_IsActive
       value: 0
@@ -51094,7 +51138,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.7774295, y: 1}
+    m_SensorSize: {x: 1.7403846, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
