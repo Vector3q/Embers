@@ -24,6 +24,15 @@ public class PlayerController : MonoBehaviour
     public bool interactive;
     //是否正在交互
     public bool isInteracting;
+
+    //各种装备的信息
+    //是否装备物品
+    public bool equiped;
+    //是否装备大刀
+    public bool equipedKnifee;
+    //是否装备火炬
+    public bool equipedFire;
+
     //背包是否打开
     bool isOpen;
     //动画管理器
@@ -78,6 +87,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+            CheckEquipment();
             FlipX();
             Move();
             OpenMyBag();
@@ -94,7 +104,7 @@ public class PlayerController : MonoBehaviour
     }*/
 
 
-    //行走的函数
+    //行走的函数,里面需要确定现在装备的是什么东西
     void Move()
     {
         //获取x和y轴的变量
@@ -187,5 +197,55 @@ public class PlayerController : MonoBehaviour
     {
         if(!isSpecial(Selected_Equipment) && !DetectSpecial.Detected)//所选物品不是特殊物体并且合成界面未打开
             Equipment_weapon = Selected_Equipment;
+    }
+
+    //检查武器并且调整Animator参数
+    void CheckEquipment()
+    {
+        //获取武器的信息
+        string EquipmentName = GetComponent<PlayerController>().Equipment_weapon.itemName;
+
+        switch (EquipmentName)
+        {
+            //装备了火炬
+            case "fire":
+                equiped = true;
+                equipedKnifee = false;
+                equipedFire = true;
+                break;
+            case "knife":
+                equiped = true;
+                equipedKnifee = true;
+                equipedFire = false;
+                break;
+            default:
+                equiped = false;
+                equipedKnifee = false;
+                equipedFire = false;
+                break;
+        }
+        //没有武器
+        if (!equiped)
+        {
+            animator.SetBool("Equiped",false);
+            animator.SetBool("EquipedFire", false);
+            animator.SetBool("EquipedKnifee", false);
+            return;
+        }
+        //装备武器，武器是大刀
+        if (equiped && equipedKnifee)
+        {
+            animator.SetBool("Equiped", true);
+            animator.SetBool("EquipedFire", false);
+            animator.SetBool("EquipedKnifee", true);
+            return;
+        }
+        //装备武器，武器是火炬
+        if (equiped && equipedFire)
+        {
+            animator.SetBool("Equiped", true);
+            animator.SetBool("EquipedFire", true);
+            animator.SetBool("EquipedKnifee", false);
+        }
     }
 }

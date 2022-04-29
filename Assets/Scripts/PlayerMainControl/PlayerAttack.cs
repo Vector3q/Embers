@@ -14,8 +14,12 @@ public class PlayerAttack : MonoBehaviour
     //开始攻击之前的等待时间（前摇）
     public float StartAttackTime;
     // Start is called before the first frame update
+    //获取玩家的控件
+    private PlayerController playerController;
+
     void Start()
     {
+        playerController = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerController>();
         anim=GameObject.Find("Player").GetComponent<Animator>();
         mcollider2D=GetComponent<PolygonCollider2D>();
         EndWaitTime = 0.15f;
@@ -31,8 +35,8 @@ public class PlayerAttack : MonoBehaviour
     //按下j键攻击
     void Attack()
     {
-        //按下攻击键进行攻击
-        if (Input.GetButtonDown("Attack"))
+        //按下攻击键进行攻击,前提是要装备刀
+        if (Input.GetButtonDown("Attack") && playerController.equipedKnifee==true)
         {
             anim.SetTrigger("Attack");
             //控制碰撞体的出现和消失
